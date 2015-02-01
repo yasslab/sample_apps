@@ -1,26 +1,35 @@
-# Rails チュートリアル sample_app セット
+# Rails チュートリアル サンプルアプリケーション セット
 
 Railsチュートリアル (4.0版) の各章が始められる状態を集めたリポジトリです。第１章〜第３章はプロジェクトを作成するところから始まるので、第４章以降の状態を集めています。
 
-[Railsハンズオンセミナー](http://railstutorial.jp/seminars)に参加するときなど、各章の状態をローカルで再現したいときなどにお使いください。
+[Railsハンズオンセミナー](http://railstutorial.jp/seminars)に途中から参加するときや、
+[Railsスクリーンキャスト](http://railstutorial.jp/screencasts)を途中から視聴するときなどにご活用ください。
 
 ## 各章とディレクトリ名の対応関係
 
-- 第4章:  `ch04`
-- 第5章:  `ch05`
-- 第6章:  `ch06`
-- 第7章:  `ch07`
-- 第8章:  `ch08`
-- 第9章:  `ch09`
-- 第10章: `ch10`
-- 第11章: `ch11`
+-  4章が始められる状態: `ch04`
+-  5章が始められる状態: `ch05`
+-  6章が始められる状態: `ch06`
+-  7章が始められる状態: `ch07`
+-  8章が始められる状態: `ch08`
+-  9章が始められる状態: `ch09` (* 後日収録)
+- 10章が始められる状態: `ch10` (* 後日収録)
+- 11章が始められる状態: `ch11` (* 後日収録)
+
+
+## 関連リンク
+
+- [Rails チュートリアル](http://railstutorial.jp)
+- [Rails ハンズオンセミナー](http://railstutorial.jp/seminars)
+- [Rails スクリーンキャスト](http://railstutorial.jp/screencasts)
+- [Rails ガイド](http://railsguides.jp)
 
 
 # ライセンス
 
 The MIT License (MIT)
 
-Copyright (c) 2015 YassLab
+Copyright (c) 2015 [YassLab](http://yasslab.jp)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
