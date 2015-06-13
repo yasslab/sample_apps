@@ -6,6 +6,9 @@ Railsチュートリアル (4.0版) の各章が始められる状態を集め�
 [Rails解説セミナー](http://railstutorial.jp/seminars)に途中から参加するときや、   
 [Railsスクリーンキャスト](http://railstutorial.jp/screencasts)を途中から視聴するときなどにご活用ください。
 
+なお、Railsチュートリアルを進められる環境をVagrantで構築する[スターターキット] (https://github.com/yasslab/railstutorialjp_starter_kit)もあります。    
+こちらも適宜ご活用して頂けたらと思います。
+
 ## 各章とディレクトリ名の対応関係
 
 - &nbsp;&nbsp;4章が始められる状態: `ch04`
