@@ -9,17 +9,16 @@ Railsチュートリアル (4.0版) の各章が始められる状態を集め�
 なお、Railsチュートリアルを進められる環境をVagrantで構築する[スターターキット] (https://github.com/yasslab/railstutorial.jp_starter_kit)もあります。    
 こちらも適宜ご活用して頂けたらと思います。
 
-## 各章とディレクトリ名の対応関係
+## 各章とディレクトリ名の対応関係 (Rails 4.0版)
 
-- &nbsp;&nbsp;4章が始められる状態: `ch04`
-- &nbsp;&nbsp;5章が始められる状態: `ch05`
-- &nbsp;&nbsp;6章が始められる状態: `ch06`
-- &nbsp;&nbsp;7章が始められる状態: `ch07`
-- &nbsp;&nbsp;8章が始められる状態: `ch08`
-- &nbsp;&nbsp;9章が始められる状態: `ch09`
-- 10章が始められる状態: `ch10`
-- 11章が始められる状態: `ch11`
-- 完成した Sample App: `sample_app`
+- &nbsp;&nbsp;[4章](http://railstutorial.jp/chapters/rails-flavored-ruby?version=4.0#top)が始められる状態: `ch04`
+- &nbsp;&nbsp;[5章](http://railstutorial.jp/chapters/filling-in-the-layout?version=4.0#top)が始められる状態: `ch05`
+- &nbsp;&nbsp;[6章](http://railstutorial.jp/chapters/modeling-users?version=4.0#top)が始められる状態: `ch06`
+- &nbsp;&nbsp;[7章](http://railstutorial.jp/chapters/sign-up?version=4.0#top)が始められる状態: `ch07`
+- &nbsp;&nbsp;[8章](http://railstutorial.jp/chapters/sign-in-sign-out?version=4.0#top)が始められる状態: `ch08`
+- &nbsp;&nbsp;[9章](http://railstutorial.jp/chapters/updating-showing-and-deleting-users?version=4.0#top)が始められる状態: `ch09`
+- [10章](http://railstutorial.jp/chapters/user-microposts?version=4.0#top)が始められる状態: `ch10`
+- [11章](http://railstutorial.jp/chapters/following-users?version=4.0#top)が始められる状態: `ch11`
 
 ※ なお、完成したサンプルアプリケーションは、Railsチュートリアルの[ヘルプページ](http://railstutorial.jp/help)から公開されています。
 
