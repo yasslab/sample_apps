@@ -1,4 +1,4 @@
-![Cover Photo](https://raw.githubusercontent.com/yasslab/sample_apps/master/cover.png)
+[![Cover Photo](https://raw.githubusercontent.com/yasslab/sample_apps/master/cover.png)](http://railstutorial.jp/)
 
 # Rails チュートリアル sample_app セット
 
