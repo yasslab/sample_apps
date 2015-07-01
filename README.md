@@ -1,3 +1,5 @@
+![Cover Photo](https://raw.githubusercontent.com/yasslab/sample_apps/master/cover.png)
+
 # Rails チュートリアル sample_app セット
 
 Railsチュートリアル (4.0版) の各章が始められる状態を集めたリポジトリです。   
