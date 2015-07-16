@@ -1,0 +1,167 @@
+
+app/controllers/application_controller.rb,79
+class ApplicationController < ActionController::BaseApplicationController1,0
+
+app/controllers/microposts_controller.rb,209
+class MicropostsController < ApplicationControllerMicropostsController1,0
+  def createcreate5,0
+  def destroydestroy16,0
+  def micropost_paramsmicropost_params23,0
+  def correct_usercorrect_user27,0
+
+app/controllers/relationships_controller.rb,133
+class RelationshipsController < ApplicationControllerRelationshipsController1,0
+  def createcreate4,0
+  def destroydestroy13,0
+
+app/controllers/sessions_controller.rb,141
+class SessionsController < ApplicationControllerSessionsController2,0
+  def newnew3,0
+  def createcreate6,0
+  def destroydestroy19,0
+
+app/controllers/static_pages_controller.rb,168
+class StaticPagesController < ApplicationControllerStaticPagesController1,0
+  def homehome2,0
+  def helphelp9,0
+  def aboutabout12,0
+  def contactcontact15,0
+
+app/controllers/users_controller.rb,393
+class UsersController < ApplicationControllerUsersController2,0
+  def indexindex7,0
+  def showshow11,0
+  def newnew16,0
+  def createcreate20,0
+  def editedit31,0
+  def updateupdate35,0
+  def destroydestroy46,0
+  def followingfollowing52,0
+  def followersfollowers59,0
+  def user_paramsuser_params68,0
+  def correct_usercorrect_user73,0
+  def admin_useradmin_user78,0
+
+app/helpers/application_helper.rb,91
+module ApplicationHelperApplicationHelper2,0
+  def full_title(page_title)full_title4,0
+
+app/helpers/sessions_helper.rb,398
+module SessionsHelperSessionsHelper2,0
+  def sign_in(user)sign_in3,0
+  def signed_in?signed_in?10,0
+  def current_user=(user)current_user=14,0
+  def current_usercurrent_user18,0
+  def current_user?(user)current_user?23,0
+  def sign_outsign_out27,0
+  def redirect_back_or(default)redirect_back_or32,0
+  def store_locationstore_location37,0
+  def signed_in_usersigned_in_user41,0
+
+app/helpers/static_pages_helper.rb,47
+module StaticPagesHelperStaticPagesHelper1,0
+
+app/helpers/users_helper.rb,99
+module UsersHelperUsersHelper2,0
+  def gravatar_for(user, options = {size: 50})gravatar_for4,0
+
+app/models/micropost.rb,280
+class Micropost < ActiveRecord::BaseMicropost1,0
+  belongs_to :useruser2,0
+  belongs_to :useruser=2,0
+  belongs_to :userbuild_user2,0
+  belongs_to :usercreate_user2,0
+  belongs_to :usercreate_user!2,0
+  def self.from_users_followed_by(user)from_users_followed_by7,0
+
+app/models/relationship.rb,661
+class Relationship < ActiveRecord::BaseRelationship1,0
+  belongs_to :follower, class_name: "User"follower2,0
+  belongs_to :follower, class_name: "User"follower=2,0
+  belongs_to :follower, class_name: "User"build_follower2,0
+  belongs_to :follower, class_name: "User"create_follower2,0
+  belongs_to :follower, class_name: "User"create_follower!2,0
+  belongs_to :followed, class_name: "User"followed3,0
+  belongs_to :followed, class_name: "User"followed=3,0
+  belongs_to :followed, class_name: "User"build_followed3,0
+  belongs_to :followed, class_name: "User"create_followed3,0
+  belongs_to :followed, class_name: "User"create_followed!3,0
+
+app/models/user.rb,2135
+class User < ActiveRecord::BaseUser2,0
+  has_many :microposts, dependent: :destroymicroposts3,0
+  has_many :microposts, dependent: :destroymicroposts=3,0
+  has_many :microposts, dependent: :destroymicropost_ids3,0
+  has_many :microposts, dependent: :destroymicropost_ids=3,0
+  has_many :relationships, foreign_key: "follower_id", dependent: :destroyrelationships4,0
+  has_many :relationships, foreign_key: "follower_id", dependent: :destroyrelationships=4,0
+  has_many :relationships, foreign_key: "follower_id", dependent: :destroyrelationship_ids4,0
+  has_many :relationships, foreign_key: "follower_id", dependent: :destroyrelationship_ids=4,0
+  has_many :followed_users, through: :relationships, source: :followedfollowed_users5,0
+  has_many :followed_users, through: :relationships, source: :followedfollowed_users=5,0
+  has_many :followed_users, through: :relationships, source: :followedfollowed_user_ids5,0
+  has_many :followed_users, through: :relationships, source: :followedfollowed_user_ids=5,0
+  has_many :reverse_relationships, foreign_key: "followed_id",reverse_relationships6,0
+  has_many :reverse_relationships, foreign_key: "followed_id",reverse_relationships=6,0
+  has_many :reverse_relationships, foreign_key: "followed_id",reverse_relationship_ids6,0
+  has_many :reverse_relationships, foreign_key: "followed_id",reverse_relationship_ids=6,0
+  has_many :followers, through: :reverse_relationships, source: :followerfollowers9,0
+  has_many :followers, through: :reverse_relationships, source: :followerfollowers=9,0
+  has_many :followers, through: :reverse_relationships, source: :followerfollower_ids9,0
+  has_many :followers, through: :reverse_relationships, source: :followerfollower_ids=9,0
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/iVALID_EMAIL_REGEX15,0
+  def User.new_remember_tokennew_remember_token22,0
+  def User.encrypt(token)encrypt26,0
+  def feedfeed30,0
+  def following?(other_user)following?34,0
+  def follow!(other_user)follow!38,0
+  def unfollow!(other_user)unfollow!42,0
+  def create_remember_tokencreate_remember_token48,0
+
+config/application.rb,90
+module SampleAppSampleApp14,0
+  class Application < Rails::ApplicationApplication15,0
+
+config/initializers/secret_token.rb,35
+def secure_tokensecure_token14,0
+
+db/migrate/20141026213708_create_users.rb,84
+class CreateUsers < ActiveRecord::MigrationCreateUsers1,0
+  def changechange2,0
+
+db/migrate/20141027093833_add_index_to_users_email.rb,102
+class AddIndexToUsersEmail < ActiveRecord::MigrationAddIndexToUsersEmail1,0
+  def changechange2,0
+
+db/migrate/20141027103033_add_password_digest_to_users.rb,110
+class AddPasswordDigestToUsers < ActiveRecord::MigrationAddPasswordDigestToUsers1,0
+  def changechange2,0
+
+db/migrate/20141028061018_add_remember_token_to_users.rb,108
+class AddRememberTokenToUsers < ActiveRecord::MigrationAddRememberTokenToUsers1,0
+  def changechange2,0
+
+db/migrate/20141028205115_add_admin_to_users.rb,92
+class AddAdminToUsers < ActiveRecord::MigrationAddAdminToUsers1,0
+  def changechange2,0
+
+db/migrate/20141029150935_create_microposts.rb,94
+class CreateMicroposts < ActiveRecord::MigrationCreateMicroposts1,0
+  def changechange2,0
+
+db/migrate/20141030054734_create_relationships.rb,100
+class CreateRelationships < ActiveRecord::MigrationCreateRelationships1,0
+  def changechange2,0
+
+example_user.rb,271
+class UserUser1,0
+  attr_accessor :name, :emailname2,0
+  attr_accessor :name, :emailname=2,0
+  attr_accessor :name, :emailemail2,0
+  attr_accessor :name, :emailemail=2,0
+  def initialize(attributes = {})initialize4,0
+  def formatted_emailformatted_email9,0
+
+spec/support/utilities.rb,85
+def full_title(page_title)full_title2,0
+def sign_in(user, options={})sign_in11,0
