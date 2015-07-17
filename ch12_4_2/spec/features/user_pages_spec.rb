@@ -10,15 +10,15 @@ describe "User pages" do
       visit users_path
     end
 
-    it { should have_title('All users') }
-    it { should have_content('All users') }
+    it { is_expected.to have_title('All users') }
+    it { is_expected.to have_content('All users') }
 
     describe "pagination" do
 
       before(:all) { 30.times { FactoryGirl.create(:user) } }
       after(:all)  { User.delete_all }
 
-      it { should have_selector('div.pagination') }
+      it { is_expected.to have_selector('div.pagination') }
 
       it "should list each user" do
         User.paginate(page: 1).each do |user|
@@ -28,7 +28,7 @@ describe "User pages" do
     end
 
     describe "delete links" do
-      it { should_not have_link('delete') }
+      it { is_expected.not_to have_link('delete') }
 
       describe "as an admin user" do
         let(:admin) { FactoryGirl.create(:admin) }
@@ -37,13 +37,13 @@ describe "User pages" do
           visit users_path
         end
 
-        it { should have_link('delete', href: user_path(User.first)) }
+        it { is_expected.to have_link('delete', href: user_path(User.first)) }
         it "should be able to delete another user" do
           expect do
             click_link('delete', match: :first)
           end.to change(User, :count).by(-1)
         end
-        it { should_not have_link('delete', href: user_path(admin)) }
+        it { is_expected.not_to have_link('delete', href: user_path(admin)) }
       end
     end
   end
@@ -54,13 +54,13 @@ describe "User pages" do
     let!(:m2) { FactoryGirl.create(:micropost, user: user, content: "Bar") }
     before { visit user_path(user) }
 
-    it { should have_content(user.name) }
-    it { should have_title(user.name) }
+    it { is_expected.to have_content(user.name) }
+    it { is_expected.to have_title(user.name) }
 
     describe "microposts" do
-      it { should have_content(m1.content) }
-      it { should have_content(m2.content) }
-      it { should have_content(user.microposts.count) }
+      it { is_expected.to have_content(m1.content) }
+      it { is_expected.to have_content(m2.content) }
+      it { is_expected.to have_content(user.microposts.count) }
     end
 
     describe "follow/unfollow buttons" do
@@ -84,7 +84,7 @@ describe "User pages" do
 
         describe "toggling the button" do
           before { click_button "Follow" }
-          it { should have_xpath("//input[@value='Unfollow']") }
+          it { is_expected.to have_xpath("//input[@value='Unfollow']") }
         end
       end
 
@@ -108,7 +108,7 @@ describe "User pages" do
 
         describe "toggling the button" do
           before { click_button "Unfollow" }
-          it { should have_xpath("//input[@value='Follow']") }
+          it { is_expected.to have_xpath("//input[@value='Follow']") }
         end
       end
     end
@@ -117,8 +117,8 @@ describe "User pages" do
   describe "signup page" do
     before { visit signup_path }
 
-    it { should have_content('Sign up') }
-    it { should have_title(full_title('Sign up')) }
+    it { is_expected.to have_content('Sign up') }
+    it { is_expected.to have_title(full_title('Sign up')) }
   end
 
   describe "signup" do
@@ -147,9 +147,9 @@ describe "User pages" do
         before { click_button submit }
         let(:user) { User.find_by(email: 'user@example.com') }
 
-        it { should have_link('Sign out') }
-        it { should have_title(user.name) }
-        it { should have_selector('div.alert.alert-success', text: 'Welcome') }
+        it { is_expected.to have_link('Sign out') }
+        it { is_expected.to have_title(user.name) }
+        it { is_expected.to have_selector('div.alert.alert-success', text: 'Welcome') }
       end
     end
   end
@@ -162,15 +162,15 @@ describe "User pages" do
     end
 
     describe "page" do
-      it { should have_content("Update your profile") }
-      it { should have_title("Edit user") }
-      it { should have_link('change', href: 'http://gravatar.com/emails') }
+      it { is_expected.to have_content("Update your profile") }
+      it { is_expected.to have_title("Edit user") }
+      it { is_expected.to have_link('change', href: 'http://gravatar.com/emails') }
     end
 
     describe "with invalid information" do
       before { click_button "Save changes" }
 
-      it { should have_content('error') }
+      it { is_expected.to have_content('error') }
     end
 
     describe "with valid information" do
@@ -184,9 +184,9 @@ describe "User pages" do
         click_button "Save changes"
       end
 
-      it { should have_title(new_name) }
-      it { should have_selector('div.alert.alert-success') }
-      it { should have_link('Sign out', href: signout_path) }
+      it { is_expected.to have_title(new_name) }
+      it { is_expected.to have_selector('div.alert.alert-success') }
+      it { is_expected.to have_link('Sign out', href: signout_path) }
       specify { expect(user.reload.name).to  eq new_name }
       specify { expect(user.reload.email).to eq new_email }
     end
@@ -203,9 +203,9 @@ describe "User pages" do
         visit following_user_path(user)
       end
 
-      it { should have_title(full_title('Following')) }
-      it { should have_selector('h3', text: 'Following') }
-      it { should have_link(other_user.name, href: user_path(other_user)) }
+      it { is_expected.to have_title(full_title('Following')) }
+      it { is_expected.to have_selector('h3', text: 'Following') }
+      it { is_expected.to have_link(other_user.name, href: user_path(other_user)) }
     end
 
     describe "followers" do
@@ -214,9 +214,9 @@ describe "User pages" do
         visit followers_user_path(other_user)
       end
 
-      it { should have_title(full_title('Followers')) }
-      it { should have_selector('h3', text: 'Followers') }
-      it { should have_link(user.name, href: user_path(user)) }
+      it { is_expected.to have_title(full_title('Followers')) }
+      it { is_expected.to have_selector('h3', text: 'Followers') }
+      it { is_expected.to have_link(user.name, href: user_path(user)) }
     end
   end
 end
