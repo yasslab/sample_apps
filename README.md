@@ -21,9 +21,15 @@ Railsチュートリアル (4.0版) の各章が始められる状態を集め�
 - &nbsp;&nbsp;[9章](http://railstutorial.jp/chapters/updating-showing-and-deleting-users?version=4.0#top)が始められる状態: `ch09`
 - [10章](http://railstutorial.jp/chapters/user-microposts?version=4.0#top)が始められる状態: `ch10`
 - [11章](http://railstutorial.jp/chapters/following-users?version=4.0#top)が始められる状態: `ch11`
-- [12章](http://railstutorial.jp/chapters/supplement?version=3.2#top)が始められる状態: `ch12_3_2` (Rails3.2版のみ)
-- [12章](http://railstutorial.jp/chapters/supplement?version=3.2#top)でアップグレードした状態: `ch12_4_0` (Rails3.2版のみ)
-- 完成した Sample App: `sample_app`
+- 完成した Sample App: `sample_app_4_0`
+
+## オマケ
+
+- [12章](http://railstutorial.jp/chapters/supplement?version=3.2#top)が始められる状態: `ch12_3_2` (Rails3.2版)
+- [12章](http://railstutorial.jp/chapters/supplement?version=3.2#top)でアップグレードした状態: `ch12_4_0` (Rails3.2版)
+- 完成した Sample App を Rails 4.1 で動かせるようにした: `sample_app_4_1`
+- 完成した Sample App を Rails 4.2 で動かせるようにした: `sample_app_4_2`
+
 
 
 ※ なお、完成したサンプルアプリケーションは、Railsチュートリアルの[ヘルプページ](http://railstutorial.jp/help)から公開されています。
