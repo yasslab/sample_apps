@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe Relationship do
   let(:follower) { FactoryGirl.create(:user) }
