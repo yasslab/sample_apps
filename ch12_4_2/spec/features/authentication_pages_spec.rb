@@ -47,7 +47,7 @@ describe "AuthenticationPages" do
     end
   end
 
-  describe "authorization" do
+  describe "authorization", type: :request do
     describe "for non-signed-in users" do
       let(:user) { FactoryGirl.create(:user) }
 
@@ -127,7 +127,7 @@ describe "AuthenticationPages" do
       describe "submitting a GET request to the Users#edit action" do
         before { get edit_user_path(wrong_user) }
         specify { expect(response.body).not_to match(full_title('Edit user')) }
-        specify { expect(response).to redirect_to(root_url) }
+        specify { expect(response).to redirect_to(root_path) }
       end
 
       describe "submitting a PATCH request to the Users#update action" do
