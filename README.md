@@ -26,9 +26,9 @@ Railsチュートリアル (4.0版) の各章が始められる状態を集め�
 ## オマケ
 
 - [12章](http://railstutorial.jp/chapters/supplement?version=3.2#top)が始められる状態: `ch12_3_2` (Rails3.2版)
-- [12章](http://railstutorial.jp/chapters/supplement?version=3.2#top)でアップグレードした状態: `ch12_4_0` (Rails3.2版)
-- 完成した Sample App を Rails 4.1 で動かせるようにした: `sample_app_4_1`
-- 完成した Sample App を Rails 4.2 で動かせるようにした: `sample_app_4_2`
+- [12章](http://railstutorial.jp/chapters/supplement?version=3.2#top)が終わった状態: `ch12_4_0` (Rails4.0版)
+- 完成した Sample App を Rails 4.1 で動くようにしてみた: `sample_app_4_1`
+- 完成した Sample App を Rails 4.2 で動くようにしてみた: `sample_app_4_2`
 
 
 
