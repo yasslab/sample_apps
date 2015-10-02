@@ -31,6 +31,8 @@
 Rails 4.0対応版では、`sample_app`に関わるコードを (第3章以降のコード) をまとめています。   
 Mac OS X (Yosemite) + rbenv + Ruby 2.0.0で、動作を確認しております。
 
+- [01章](http://railstutorial.jp/chapters/beginning?version=4.2#cha-beginning)が終わった状態: `ch01`
+- [02章](http://railstutorial.jp/chapters/toy_app?version=4.2#cha-a_toy_app)が終わった状態: `ch02`
 - [03章](http://railstutorial.jp/chapters/static-pages?version=4.0#top)が終わった状態: `ch03`
 - [04章](http://railstutorial.jp/chapters/rails-flavored-ruby?version=4.0#top)が終わった状態: `ch04`
 - [05章](http://railstutorial.jp/chapters/filling-in-the-layout?version=4.0#top)が終わった状態: `ch05`
