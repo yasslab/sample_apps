@@ -14,16 +14,16 @@
 `4_2`というディレクトリ内に、各章が終わった状態の `sample_app` を置いています。   
 [Cloud 9](https://c9.io/)上において、動作確認をしております。
 
-- [03章](http://railstutorial.jp/chapters/static-pages?version=4.2#top)が終わった状態: `ch03`
-- [04章](http://railstutorial.jp/chapters/rails-flavored-ruby?version=4.2#top)が終わった状態: `ch04`
-- [05章](http://railstutorial.jp/chapters/filling-in-the-layout?version=4.2#top)が終わった状態: `ch05`
-- [06章](http://railstutorial.jp/chapters/modeling-users?version=4.2#top)が終わった状態: `ch06`
-- [07章](http://railstutorial.jp/chapters/sign-up?version=4.2#top)が終わった状態: `ch07`
-- [08章](http://railstutorial.jp/chapters/sign-in-sign-out?version=4.2#top)が終わった状態: `ch08`
-- [09章](http://railstutorial.jp/chapters/updating-showing-and-deleting-users?version=4.2#top)が終わった状態: `ch09`
+- [03章](http://railstutorial.jp/chapters/static_pages?version=4.2#cha-static_pages)が終わった状態: `ch03`
+- [04章](http://railstutorial.jp/chapters/rails_flavored_ruby?version=4.2#cha-rails_flavored_ruby)が終わった状態: `ch04`
+- [05章](http://railstutorial.jp/chapters/filling_in_the_layout?version=4.2#cha-filling_in_the_layout)が終わった状態: `ch05`
+- [06章](http://railstutorial.jp/chapters/modeling_users?version=4.2#cha-modeling_users)が終わった状態: `ch06`
+- [07章](http://railstutorial.jp/chapters/sign_up?version=4.2#cha-sign_up)が終わった状態: `ch07`
+- [08章](http://railstutorial.jp/chapters/log_in_log_out?version=4.2#cha-log_in_log_out)が終わった状態: `ch08`
+- [09章](http://railstutorial.jp/chapters/updating_and_deleting_users?version=4.2#cha-updating_showing_and_deleting_users)が終わった状態: `ch09`
 - [10章](http://railstutorial.jp/chapters/account_activation_password_reset?version=4.2#cha-account_activation_and_password_reset)が終わった状態: `ch10`
-- [11章](http://railstutorial.jp/chapters/user-microposts?version=4.2#top)が終わった状態: `ch11`
-- [12章](http://railstutorial.jp/chapters/following-users?version=4.2#top)が終わった状態: `ch12`
+- [11章](http://railstutorial.jp/chapters/user_microposts?version=4.2#cha-user_microposts)が終わった状態: `ch11`
+- [12章](http://railstutorial.jp/chapters/following_users?version=4.2#cha-following_users)が終わった状態: `ch12`
 
 
 ## 各章とディレクトリ名の対応関係 (Rails 4.0.5対応版)
