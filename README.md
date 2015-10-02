@@ -21,7 +21,7 @@
 - [07章](http://railstutorial.jp/chapters/sign-up?version=4.2#top)が終わった状態: `ch07`
 - [08章](http://railstutorial.jp/chapters/sign-in-sign-out?version=4.2#top)が終わった状態: `ch08`
 - [09章](http://railstutorial.jp/chapters/updating-showing-and-deleting-users?version=4.2#top)が終わった状態: `ch09`
-
+- [10章](http://railstutorial.jp/chapters/account_activation_password_reset?version=4.2#cha-account_activation_and_password_reset)が終わった状態: `ch10`
 - [11章](http://railstutorial.jp/chapters/user-microposts?version=4.2#top)が終わった状態: `ch11`
 - [12章](http://railstutorial.jp/chapters/following-users?version=4.2#top)が終わった状態: `ch12`
 
