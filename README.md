@@ -9,10 +9,10 @@
 
 なお、各章の演習の結果や、高度なセットアップなどについては反映されておりません。
 
-## 各章とディレクトリ名の対応関係 (Rails 4.2.2対応版)
+## 各章とディレクトリ名の対応関係 (Rails 4.2.2 対応版)
 
-`4_2`というディレクトリ内に、各章が終わった状態の `sample_app` を置いています。   
-[Cloud 9](https://c9.io/)上において、動作確認をしております。
+`4_2_2`というディレクトリ内に、各章が終わった状態の `sample_app` を置いています。   
+第1章で紹介している [Cloud 9](https://c9.io/) の上において、動作確認をしています。
 
 - [03章](http://railstutorial.jp/chapters/static_pages?version=4.2#cha-static_pages)が終わった状態: `ch03`
 - [04章](http://railstutorial.jp/chapters/rails_flavored_ruby?version=4.2#cha-rails_flavored_ruby)が終わった状態: `ch04`
@@ -26,13 +26,11 @@
 - [12章](http://railstutorial.jp/chapters/following_users?version=4.2#cha-following_users)が終わった状態: `ch12`
 
 
-## 各章とディレクトリ名の対応関係 (Rails 4.0.5対応版)
+## 各章とディレクトリ名の対応関係 (Rails 4.0.5 対応版)
 
-Rails 4.0対応版では、`sample_app`に関わるコードを (第3章以降のコード) をまとめています。   
-Mac OS X (Yosemite) + rbenv + Ruby 2.0.0で、動作を確認しております。
+`4_0_5`というディレクトリ内に、各章が終わった状態の `sample_app` を置いています (第3章以降のみ)。   
+Mac OS X (Yosemite) + rbenv + Ruby 2.0.0 で、動作確認をしています。
 
-- [01章](http://railstutorial.jp/chapters/beginning?version=4.2#cha-beginning)が終わった状態: `ch01`
-- [02章](http://railstutorial.jp/chapters/toy_app?version=4.2#cha-a_toy_app)が終わった状態: `ch02`
 - [03章](http://railstutorial.jp/chapters/static-pages?version=4.0#top)が終わった状態: `ch03`
 - [04章](http://railstutorial.jp/chapters/rails-flavored-ruby?version=4.0#top)が終わった状態: `ch04`
 - [05章](http://railstutorial.jp/chapters/filling-in-the-layout?version=4.0#top)が終わった状態: `ch05`
