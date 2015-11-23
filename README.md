@@ -15,18 +15,18 @@
 第1章で紹介している [Cloud 9](https://c9.io/) の上において、動作確認をしています。   
 各ディレクトリの内容は次のとおりです。
 
-- `ch01`: [第1章](http://railstutorial.jp/chapters/beginning?version=4.2#cha-beginning)が終わった状態
-- `ch02`: [第2章](http://railstutorial.jp/chapters/toy_app?version=4.2#top)が終わった状態
-- `ch03`: [第3章](http://railstutorial.jp/chapters/static_pages?version=4.2#cha-static_pages)が終わった状態
-- `ch04`: [第4章](http://railstutorial.jp/chapters/rails_flavored_ruby?version=4.2#cha-rails_flavored_ruby)が終わった状態
-- `ch05`: [第5章](http://railstutorial.jp/chapters/filling_in_the_layout?version=4.2#cha-filling_in_the_layout)が終わった状態
-- `ch06`: [第6章](http://railstutorial.jp/chapters/modeling_users?version=4.2#cha-modeling_users)が終わった状態
-- `ch07`: [第7章](http://railstutorial.jp/chapters/sign_up?version=4.2#cha-sign_up)が終わった状態
-- `ch08`: [第8章](http://railstutorial.jp/chapters/log_in_log_out?version=4.2#cha-log_in_log_out)が終わった状態
-- `ch09`: [第9章](http://railstutorial.jp/chapters/updating_and_deleting_users?version=4.2#cha-updating_showing_and_deleting_users)が終わった状態
-- `ch10`: [第10章](http://railstutorial.jp/chapters/account_activation_password_reset?version=4.2#cha-account_activation_and_password_reset)が終わった状態
-- `ch11`: [第11章](http://railstutorial.jp/chapters/user_microposts?version=4.2#cha-user_microposts)が終わった状態
-- `ch12`: [第12章](http://railstutorial.jp/chapters/following_users?version=4.2#cha-following_users)が終わった状態
+- __[ch01](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch01):__ [本書の第1章](http://railstutorial.jp/chapters/beginning?version=4.2#cha-beginning)が終わった状態
+- __[ch02](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch02):__ [本書の第2章](http://railstutorial.jp/chapters/toy_app?version=4.2#top)が終わった状態
+- __[ch03](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch03):__ [本書の第3章](http://railstutorial.jp/chapters/static_pages?version=4.2#cha-static_pages)が終わった状態
+- __[ch04](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch04):__ [本書の第4章](http://railstutorial.jp/chapters/rails_flavored_ruby?version=4.2#cha-rails_flavored_ruby)が終わった状態
+- __[ch05](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch05):__ [本書の第5章](http://railstutorial.jp/chapters/filling_in_the_layout?version=4.2#cha-filling_in_the_layout)が終わった状態
+- __[ch06](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch06):__ [本書の第6章](http://railstutorial.jp/chapters/modeling_users?version=4.2#cha-modeling_users)が終わった状態
+- __[ch07](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch07):__ [本書の第7章](http://railstutorial.jp/chapters/sign_up?version=4.2#cha-sign_up)が終わった状態
+- __[ch08](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch09):__ [本書の第8章](http://railstutorial.jp/chapters/log_in_log_out?version=4.2#cha-log_in_log_out)が終わった状態
+- __[ch09](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch09):__ [本書の第9章](http://railstutorial.jp/chapters/updating_and_deleting_users?version=4.2#cha-updating_showing_and_deleting_users)が終わった状態
+- __[ch10](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch10):__ [本書の第10章](http://railstutorial.jp/chapters/account_activation_password_reset?version=4.2#cha-account_activation_and_password_reset)が終わった状態
+- __[ch11](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch11):__ [本書の第11章](http://railstutorial.jp/chapters/user_microposts?version=4.2#cha-user_microposts)が終わった状態
+- __[ch12](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch12):__ [本書の第12章](http://railstutorial.jp/chapters/following_users?version=4.2#cha-following_users)が終わった状態
 
 
 ## 各章とディレクトリ名の対応関係 (Rails 4.0.5 対応版)
