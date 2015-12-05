@@ -71,15 +71,15 @@ Cloud IDEではなく、手元で環境を構築したい場合はこちらも�
 他、開発環境の設定例などは、Railsチュートリアルの[ヘルプページ](http://railstutorial.jp/help)を参照してください。
 
 
-## 関連リポジトリ/リンク
+## 関連リンク/関連レポジトリ
 
+- [Rails チュートリアル](http://railstutorial.jp)
 - [yasslab/railstutorial.jp_starter_kit](https://github.com/yasslab/railstutorial.jp_starter_kit)
 - [yasslab/railstutorial.jp](https://github.com/yasslab/railstutorial.jp)
-- [Rails チュートリアル](http://railstutorial.jp)
 - [Rails 解説セミナー](http://railstutorial.jp/seminars)
 - [Rails スクリーンキャスト](http://railstutorial.jp/screencasts)
 - [Rails ガイド](http://railsguides.jp)
-
+- [yasslab/railsguides.jp](https://github.com/yasslab/railsguides.jp)
 
 # 本リポジトリのライセンス
 
