@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
@@ -67,12 +68,11 @@ class UserTest < ActiveSupport::TestCase
     @user.password = @user.password_confirmation = "a" * 5
     assert_not @user.valid?
   end
-  
+
   test "authenticated? should return false for a user with nil digest" do
     assert_not @user.authenticated?(:remember, '')
   end
-  
-  
+
   # Microposts
   test "associated microposts should be destroyed" do
     @user.save
