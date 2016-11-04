@@ -5,9 +5,30 @@
 [Railsチュートリアル](http://railstutorial.jp/)の各章が終わった状態を集めたリポジトリです。   
 
 [Rails解説セミナー](http://railstutorial.jp/seminars)に途中から参加するときや、   
-[Railsスクリーンキャスト](http://railstutorial.jp/screencasts)を途中から視聴するときなどにご活用ください。
+[Railsライブ収録動画](http://railstutorial.jp/seminars#record)を途中から視聴するときなどにご活用ください。
 
 なお、各章の演習の結果や、高度なセットアップなどについては反映されておりません。
+
+## 各章とディレクトリ名の対応関係 (Rails 5.0.0.1 対応版)
+
+`5_0_0_1`というディレクトリ内に、各章が終わった状態の `sample_app` を置いています。   
+第1章で紹介している [Cloud 9](https://c9.io/) の上において、動作確認をしています。   
+各ディレクトリの内容は次のとおりです。
+
+- __[ch01](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch01):__ [本書の第1章](#)が終わった状態
+- __[ch02](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch02):__ [本書の第2章](#)が終わった状態
+- __[ch03](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch03):__ [本書の第3章](#)が終わった状態
+- __[ch04](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch04):__ [本書の第4章](#)が終わった状態
+- __[ch05](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch05):__ [本書の第5章](#)が終わった状態
+- __[ch06](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch06):__ [本書の第6章](#)が終わった状態
+- __[ch07](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch07):__ [本書の第7章](#)が終わった状態
+- __[ch08](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch09):__ [本書の第8章](#)が終わった状態
+- __[ch09](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch09):__ [本書の第9章](#)が終わった状態
+- __[ch10](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch10):__ [本書の第10章](#)が終わった状態
+- __[ch11](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch11):__ [本書の第11章](#)が終わった状態
+- __[ch12](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch12):__ [本書の第12章](#)が終わった状態
+- __[ch12](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch12):__ [本書の第13章](#)が終わった状態
+- __[ch12](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch12):__ [本書の第14章](#)が終わった状態
 
 ## 各章とディレクトリ名の対応関係 (Rails 4.2.2 対応版)
 
@@ -85,7 +106,7 @@ Cloud IDEではなく、手元で環境を構築したい場合はこちらも�
 
 The MIT License (MIT)
 
-Copyright &copy; 2015 [YassLab](http://yasslab.jp)
+Copyright &copy; 2015-2016 [YassLab](http://yasslab.jp)
 
 [![YassLab Logo](https://dl.dropboxusercontent.com/u/2819285/yasslab_logo_copy.png)](http://yasslab.jp)
 
@@ -115,7 +136,7 @@ All source code in the Ruby on Rails Tutorial is available jointly under the MIT
 
 The MIT License
 
-Copyright (c) 2014 Michael Hartl
+Copyright (c) 2014-2016 Michael Hartl
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
