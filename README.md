@@ -41,9 +41,9 @@
 
 Railsのバージョン毎の動作確認した環境が異なっております。各バージョン毎の動作確認環境は次のとおりです。
 
-- [5_1_2](https://github.com/yasslab/sample_apps/tree/master/5_1_2): [Cloud 9](https://c9.io/) + Ruby 2.4.0
-- [5_0_0_1](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1): [Cloud 9](https://c9.io/) + Ruby 2.3.0
-- [4_2_2](https://github.com/yasslab/sample_apps/tree/master/4_2_2): [Cloud 9](https://c9.io/) + Ruby 2.2.2
+- [5_1_2](https://github.com/yasslab/sample_apps/tree/master/5_1_2): Cloud9 + Ruby 2.4.0
+- [5_0_0_1](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1): Cloud9 + Ruby 2.3.0
+- [4_2_2](https://github.com/yasslab/sample_apps/tree/master/4_2_2): Cloud9 + Ruby 2.2.2
 - [4_0_5](https://github.com/yasslab/sample_apps/tree/master/4_0_5): macOS (Yosemite) + Ruby 2.0.0
 
 
