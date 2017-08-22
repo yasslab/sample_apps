@@ -2,75 +2,54 @@
 
 # Rails チュートリアル sample_app コード集
 
-[Railsチュートリアル](http://railstutorial.jp/)の各章が終わった状態を集めたリポジトリです。   
+[Railsチュートリアル](https://railstutorial.jp/)の各章が終わった状態を集めたリポジトリです。   
 
-[Rails解説セミナー](http://railstutorial.jp/seminars)に途中から参加するときや、   
-[Railsライブ収録動画](http://railstutorial.jp/seminars#record)を途中から視聴するときなどにご活用ください。
+[Rails解説セミナー](https://railstutorial.jp/seminars)に途中から参加するときや、   
+[Railsライブ収録動画](https://railstutorial.jp/seminars#record)を途中から視聴するときなどにご活用ください。
 
 なお、各章の演習の結果や、高度なセットアップなどについては反映されておりません。
 
-## 各章とディレクトリ名の対応関係 (Rails 5.0.0.1 対応版)
+## 各章とディレクトリ名の対応関係
 
-`5_0_0_1`というディレクトリ内に、各章が終わった状態の `sample_app` を置いています。   
-第1章で紹介している [Cloud 9](https://c9.io/) の上において、動作確認をしています。   
-各ディレクトリの内容は次のとおりです。
+対応しているRailsのバージョン毎にディレクトリを分けております。具体的な対応関係は次のとおりです。
 
-- __[ch01](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch01):__ [本書の第1章](#)が終わった状態
-- __[ch02](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch02):__ [本書の第2章](#)が終わった状態
-- __[ch03](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch03):__ [本書の第3章](#)が終わった状態
-- __[ch04](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch04):__ [本書の第4章](#)が終わった状態
-- __[ch05](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch05):__ [本書の第5章](#)が終わった状態
-- __[ch06](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch06):__ [本書の第6章](#)が終わった状態
-- __[ch07](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch07):__ [本書の第7章](#)が終わった状態
-- __[ch08](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch09):__ [本書の第8章](#)が終わった状態
-- __[ch09](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch09):__ [本書の第9章](#)が終わった状態
-- __[ch10](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch10):__ [本書の第10章](#)が終わった状態
-- __[ch11](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch11):__ [本書の第11章](#)が終わった状態
-- __[ch12](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch12):__ [本書の第12章](#)が終わった状態
-- __[ch12](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch12):__ [本書の第13章](#)が終わった状態
-- __[ch12](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1/ch12):__ [本書の第14章](#)が終わった状態
+- Rails 5.1 対応: [5_1_2](https://github.com/yasslab/sample_apps/tree/master/5_1_2)
+- Rails 5.0 対応: [5_0_0_1](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1)
+- Rails 4.2 対応: [4_2_2](https://github.com/yasslab/sample_apps/tree/master/4_2_2)
+- Rails 4.0 対応: [4_0_5](https://github.com/yasslab/sample_apps/tree/master/4_0_5)
 
-## 各章とディレクトリ名の対応関係 (Rails 4.2.2 対応版)
+また、上記の各ディレクトリの中に、各章が終わった状態の `sample_app` を置いています。   
+例えば `5_1_2` ディレクトリの場合は、次のようになります。
 
-`4_2_2`というディレクトリ内に、各章が終わった状態の `sample_app` を置いています。   
-第1章で紹介している [Cloud 9](https://c9.io/) の上において、動作確認をしています。   
-各ディレクトリの内容は次のとおりです。
-
-- __[ch01](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch01):__ [本書の第1章](http://railstutorial.jp/chapters/beginning?version=4.2#cha-beginning)が終わった状態
-- __[ch02](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch02):__ [本書の第2章](http://railstutorial.jp/chapters/toy_app?version=4.2#top)が終わった状態
-- __[ch03](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch03):__ [本書の第3章](http://railstutorial.jp/chapters/static_pages?version=4.2#cha-static_pages)が終わった状態
-- __[ch04](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch04):__ [本書の第4章](http://railstutorial.jp/chapters/rails_flavored_ruby?version=4.2#cha-rails_flavored_ruby)が終わった状態
-- __[ch05](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch05):__ [本書の第5章](http://railstutorial.jp/chapters/filling_in_the_layout?version=4.2#cha-filling_in_the_layout)が終わった状態
-- __[ch06](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch06):__ [本書の第6章](http://railstutorial.jp/chapters/modeling_users?version=4.2#cha-modeling_users)が終わった状態
-- __[ch07](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch07):__ [本書の第7章](http://railstutorial.jp/chapters/sign_up?version=4.2#cha-sign_up)が終わった状態
-- __[ch08](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch09):__ [本書の第8章](http://railstutorial.jp/chapters/log_in_log_out?version=4.2#cha-log_in_log_out)が終わった状態
-- __[ch09](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch09):__ [本書の第9章](http://railstutorial.jp/chapters/updating_and_deleting_users?version=4.2#cha-updating_showing_and_deleting_users)が終わった状態
-- __[ch10](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch10):__ [本書の第10章](http://railstutorial.jp/chapters/account_activation_password_reset?version=4.2#cha-account_activation_and_password_reset)が終わった状態
-- __[ch11](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch11):__ [本書の第11章](http://railstutorial.jp/chapters/user_microposts?version=4.2#cha-user_microposts)が終わった状態
-- __[ch12](https://github.com/yasslab/sample_apps/tree/master/4_2_2/ch12):__ [本書の第12章](http://railstutorial.jp/chapters/following_users?version=4.2#cha-following_users)が終わった状態
+- `ch01`: 第1章が終わった状態
+- `ch02`: 第2章が終わった状態
+- `ch03`: 第3章が終わった状態
+- `ch04`: 第4章が終わった状態
+- `ch05`: 第5章が終わった状態
+- `ch06`: 第6章が終わった状態
+- `ch07`: 第7章が終わった状態
+- `ch08`: 第8章が終わった状態
+- `ch09`: 第9章が終わった状態
+- `ch10`: 第10章が終わった状態
+- `ch11`: 第11章が終わった状態
+- `ch12`: 第12章が終わった状態
+- `ch13`: 第13章が終わった状態
+- `ch14`: 第14章が終わった状態
 
 
-## 各章とディレクトリ名の対応関係 (Rails 4.0.5 対応版)
+## 各バージョンと動作確認環境
 
-`4_0_5`というディレクトリ内に、各章が終わった状態の `sample_app` を置いています。   
-Mac OS X (Yosemite) + rbenv + Ruby 2.0.0 で、動作確認をしています。   
-各ディレクトリの内容は次のとおりです。
+Railsのバージョン毎の動作確認した環境が異なっております。各バージョン毎の動作確認環境は次のとおりです。
 
-- `ch01`: [第1章](http://railstutorial.jp/chapters/beginning?version=4.0#top)が終わった状態
-- `ch02`: [第2章](http://railstutorial.jp/chapters/a-demo-app?version=4.0#top)が終わった状態
-- `ch03`: [第3章](http://railstutorial.jp/chapters/static-pages?version=4.0#top)が終わった状態
-- `ch04`: [第4章](http://railstutorial.jp/chapters/rails-flavored-ruby?version=4.0#top)が終わった状態
-- `ch05`: [第5章](http://railstutorial.jp/chapters/filling-in-the-layout?version=4.0#top)が終わった状態
-- `ch06`: [第6章](http://railstutorial.jp/chapters/modeling-users?version=4.0#top)が終わった状態
-- `ch07`: [第7章](http://railstutorial.jp/chapters/sign-up?version=4.0#top)が終わった状態
-- `ch08`: [第8章](http://railstutorial.jp/chapters/sign-in-sign-out?version=4.0#top)が終わった状態
-- `ch09`: [第9章](http://railstutorial.jp/chapters/updating-showing-and-deleting-users?version=4.0#top)が終わった状態
-- `ch10`: [第10章](http://railstutorial.jp/chapters/user-microposts?version=4.0#top)が終わった状態
-- `ch11`: [第11章](http://railstutorial.jp/chapters/following-users?version=4.0#top)が終わった状態
+- [5_1_2](https://github.com/yasslab/sample_apps/tree/master/5_1_2): [Cloud 9](https://c9.io/) + Ruby 2.4.0
+- [5_0_0_1](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1): [Cloud 9](https://c9.io/) + Ruby 2.3.0
+- [4_2_2](https://github.com/yasslab/sample_apps/tree/master/4_2_2): [Cloud 9](https://c9.io/) + Ruby 2.2.2
+- [4_0_5](https://github.com/yasslab/sample_apps/tree/master/4_0_5): macOS (Yosemite) + Ruby 2.0.0
+
 
 ## オマケ
 
-`omake`ディレクトリの中に、試しにアップグレードしてみたコードを置いています。
+`omake` ディレクトリの中に、試しにアップグレードしてみたコードを置いています。
 
 - [12章](http://railstutorial.jp/chapters/supplement?version=3.2#top)が始められる状態: `ch12_3_2` (Rails3.2版)
 - [12章](http://railstutorial.jp/chapters/supplement?version=3.2#top)が終わった状態: `ch12_4_0` (Rails4.0版)
