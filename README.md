@@ -94,39 +94,21 @@ Cloud IDEではなく、手元で環境を構築したい場合はこちらも�
 
 ## 関連リンク/関連レポジトリ
 
-- [Rails チュートリアル](http://railstutorial.jp)
+- [Railsチュートリアル](https://railstutorial.jp)
 - [yasslab/railstutorial.jp_starter_kit](https://github.com/yasslab/railstutorial.jp_starter_kit)
 - [yasslab/railstutorial.jp](https://github.com/yasslab/railstutorial.jp)
-- [Rails 解説セミナー](http://railstutorial.jp/seminars)
-- [Rails スクリーンキャスト](http://railstutorial.jp/screencasts)
-- [Rails ガイド](http://railsguides.jp)
+- [Rails解説セミナー](https://railstutorial.jp/seminars)
+- [Railsライブ解説動画](https://railstutorial.jp/seminars#record)
+- [Railsガイド](https://railsguides.jp)
 - [yasslab/railsguides.jp](https://github.com/yasslab/railsguides.jp)
 
 # 本リポジトリのライセンス
 
 The MIT License (MIT)
 
-Copyright &copy; 2015-2016 [YassLab](http://yasslab.jp)
+Copyright &copy; 2015-2017 [YassLab](https://yasslab.jp)
 
-[![YassLab Logo](https://dl.dropboxusercontent.com/u/2819285/yasslab_logo_copy.png)](http://yasslab.jp)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+[![YassLab Logo](https://yasslab.jp/img/logo_rect_copy.png)](https://yasslab.jp)
 
 # Sample App のライセンス
 
@@ -134,26 +116,5 @@ Ruby on Rails Tutorial: Learn Web Development with Rails. Copyright © 2014 by M
 
 All source code in the Ruby on Rails Tutorial is available jointly under the MIT License and the Beerware License.
 
-The MIT License
-
-Copyright (c) 2014-2016 Michael Hartl
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
+Copyright &copy; 2014-2017 Michael Hartl
 
