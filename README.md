@@ -56,7 +56,7 @@ Railsのバージョン毎の動作確認した環境が異なっております
 - 完成した Sample App を Rails 4.1 で動くようにしてみた: `sample_app_4_1`
 - 完成した Sample App を Rails 4.2 で動くようにしてみた: `sample_app_4_2`
 
-なお、Railsチュートリアルを進められる環境をVagrantで構築する[スターターキット] (https://github.com/yasslab/railstutorial.jp_starter_kit)もあります。    
+なお、Railsチュートリアルを進められる環境をVagrantで構築する[スターターキット](https://github.com/yasslab/railstutorial.jp_starter_kit)もあります。    
 Cloud IDEではなく、手元で環境を構築したい場合はこちらも適宜ご活用して頂けたらと思います。
 
 ### 参考資料
@@ -74,11 +74,11 @@ Cloud IDEではなく、手元で環境を構築したい場合はこちらも�
 ## 関連リンク/関連レポジトリ
 
 - [Railsチュートリアル](https://railstutorial.jp)
-- [yasslab/railstutorial.jp_starter_kit](https://github.com/yasslab/railstutorial.jp_starter_kit)
-- [yasslab/railstutorial.jp](https://github.com/yasslab/railstutorial.jp)
 - [Rails解説セミナー](https://railstutorial.jp/seminars)
 - [Railsライブ解説動画](https://railstutorial.jp/seminars#record)
 - [Railsガイド](https://railsguides.jp)
+- [yasslab/railstutorial.jp_starter_kit](https://github.com/yasslab/railstutorial.jp_starter_kit)
+- [yasslab/railstutorial.jp](https://github.com/yasslab/railstutorial.jp)
 - [yasslab/railsguides.jp](https://github.com/yasslab/railsguides.jp)
 
 # 本リポジトリのライセンス
