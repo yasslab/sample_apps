@@ -75,10 +75,10 @@ Cloud IDEではなく、手元で環境を構築したい場合はこちらも�
 
 - [Railsチュートリアル](https://railstutorial.jp)
 - [Railsチュートリアル解説動画](https://railstutorial.jp/#screencast)
+- [Railsチュートリアル電子書籍](https://railstutorial.jp/#ebook)
 - [Railsガイド](https://railsguides.jp)
-- [Railsガイド電子書籍版](https://railsguides.jp/options.html)
-- [yasslab/railstutorial.jp_starter_kit](https://github.com/yasslab/railstutorial.jp_starter_kit)
-- [yasslab/railsguides.jp](https://github.com/yasslab/railsguides.jp)
+- [Railsガイド電子書籍](https://railsguides.jp/options.html)
+- [Railsガイド (GitHub リポジトリ)](https://github.com/yasslab/railsguides.jp)
 
 # 本リポジトリのライセンス
 
