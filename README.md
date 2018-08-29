@@ -85,9 +85,9 @@ Cloud IDEではなく、手元で環境を構築したい場合はこちらも�
 
 The MIT License (MIT)
 
-Copyright &copy; 2015-2017 [YassLab](https://yasslab.jp)
+Copyright &copy; 2015-2018 [YassLab 株式会社](https://yasslab.jp)
 
-[![YassLab Logo](https://yasslab.jp/img/logo_rect_copy.png)](https://yasslab.jp)
+[![YassLab Logo](https://yasslab.jp/img/logo_800x200.png)](https://yasslab.jp)
 
 # Sample App のライセンス
 
