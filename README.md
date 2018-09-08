@@ -82,7 +82,7 @@ Cloud9ではなく、手元の環境で構築したい場合はこちらも適�
 
 # 本リポジトリのライセンス
 
-The MIT License (MIT)
+The [MIT License](https://ja.wikipedia.org/wiki/MIT_License)
 
 Copyright &copy; 2015-2018 [YassLab 株式会社](https://yasslab.jp)
 
