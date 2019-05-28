@@ -24,7 +24,7 @@ class FollowingTest < ActionDispatch::IntegrationTest
       assert_select "a[href=?]", user_path(user)
     end
   end
-  
+
   # Follow/Unfollow
   test "should follow a user the standard way" do
     assert_difference '@user.following.count', 1 do

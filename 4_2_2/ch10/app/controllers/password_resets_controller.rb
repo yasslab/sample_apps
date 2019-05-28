@@ -5,7 +5,7 @@ class PasswordResetsController < ApplicationController
 
   def new
   end
-  
+
   def create
     @user = User.find_by(email: params[:password_reset][:email].downcase)
     if @user
@@ -21,7 +21,7 @@ class PasswordResetsController < ApplicationController
 
   def edit
   end
-  
+
   def update
     if params[:user][:password].empty?
       flash.now[:danger] = "Password can't be empty"
@@ -34,12 +34,12 @@ class PasswordResetsController < ApplicationController
       render 'edit'
     end
   end
-  
+
   private
 
     def user_params
       params.require(:user).permit(
-                             :password, 
+                             :password,
                              :password_confirmation)
     end
 
@@ -47,14 +47,14 @@ class PasswordResetsController < ApplicationController
       @user = User.find_by(email: params[:email])
     end
 
-    # 正しいユーザーを確認する 
+    # 正しいユーザーを確認する
     def valid_user
       unless (@user && @user.activated? &&
               @user.authenticated?(:reset, params[:id]))
         redirect_to root_url
       end
     end
-    
+
     # リセットトークンが期限切れかどうかを確認する
     def check_expiration
       if @user.password_reset_expired?

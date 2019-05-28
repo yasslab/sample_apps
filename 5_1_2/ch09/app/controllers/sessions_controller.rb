@@ -4,8 +4,8 @@ class SessionsController < ApplicationController
   def new
     #@session = Session.new
   end
-  
-  # POST /login 
+
+  # POST /login
   def create
     user = User.find_by(email: params[:session][:email])
     if user && user.authenticate(params[:session][:password])
@@ -19,7 +19,7 @@ class SessionsController < ApplicationController
       render 'new'
     end
   end
-  
+
   # DELETE /logout
   def destroy
     log_out if logged_in?

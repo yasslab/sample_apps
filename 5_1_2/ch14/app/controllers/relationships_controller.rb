@@ -10,7 +10,7 @@ class RelationshipsController < ApplicationController
       format.js # => app/views/relationships/create.js.erb
     end
   end
-  
+
   # DELETE /relationships/:id
   def destroy
     @user = Relationship.find(params[:id]).followed

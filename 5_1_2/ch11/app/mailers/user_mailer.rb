@@ -3,7 +3,7 @@ class UserMailer < ApplicationMailer
     @user = user
     mail to: user.email # => mail object
       # =>    app/views/user_mailer/account_activation.text.erb
-      # =>    app/views/user_mailer/account_activation.html.erb    
+      # =>    app/views/user_mailer/account_activation.html.erb
       # https://hogehoge.com/account_activations/:id/edit
       # :id <= @user.activation_token
   end

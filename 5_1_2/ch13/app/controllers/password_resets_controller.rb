@@ -6,7 +6,7 @@ class PasswordResetsController < ApplicationController
   # GET /password_resets/new
   def new
   end
-  
+
   # POST /password_resets == password_resets_path
   # params[:password_reset][:email] <=== User Input
   def create
@@ -25,7 +25,7 @@ class PasswordResetsController < ApplicationController
   # GET /password_resets/:id/edit?email=foo@bar.com
   def edit
   end
-  
+
   # PATCH /password_resets/:id?email=foo@bar.com
   def update
     #パスワードを再設定する
@@ -40,9 +40,9 @@ class PasswordResetsController < ApplicationController
       render 'edit'                                     # (2) への対応
     end
   end
-  
+
   private
-  
+
     def user_params
       params.require(:user).permit(:password, :password_confirmation)
     end
@@ -57,7 +57,7 @@ class PasswordResetsController < ApplicationController
         redirect_to root_url
       end
     end
-    
+
     # トークンが期限切れかどうか確認する
     def check_expiration
       if @user.password_reset_expired?

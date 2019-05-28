@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     #debugger
   end
-  
+
   def new
     @user = User.new
   end
@@ -26,7 +26,7 @@ class UsersController < ApplicationController
       render 'new'
     end
   end
-  
+
   def edit
   end
 
@@ -46,12 +46,12 @@ class UsersController < ApplicationController
   end
 
   private
-  
+
     def user_params
       params.require(:user).permit(:name, :email, :password,
                                    :password_confirmation)
     end
-    
+
     # ログイン済みユーザーかどうか確認
     def logged_in_user
       unless logged_in?
@@ -60,13 +60,13 @@ class UsersController < ApplicationController
         redirect_to login_url
       end
     end
-    
+
     # 正しいユーザーかどうか確認
     def correct_user
       @user = User.find(params[:id])
       redirect_to(root_url) unless current_user?(@user)
     end
-    
+
     # 管理者かどうか確認
     def admin_user
       redirect_to(root_url) unless current_user.admin?

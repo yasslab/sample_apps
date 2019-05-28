@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     @microposts = @user.microposts.paginate(page: params[:page])
     #debugger
   end
-  
+
   def new
     @user = User.new
   end
@@ -28,7 +28,7 @@ class UsersController < ApplicationController
       render 'new'
     end
   end
-  
+
   def edit
   end
 
@@ -62,18 +62,18 @@ class UsersController < ApplicationController
   end
 
   private
-  
+
     def user_params
       params.require(:user).permit(:name, :email, :password,
                                    :password_confirmation)
     end
-    
+
     # 正しいユーザーかどうか確認
     def correct_user
       @user = User.find(params[:id])
       redirect_to(root_url) unless current_user?(@user)
     end
-    
+
     # 管理者かどうか確認
     def admin_user
       redirect_to(root_url) unless current_user.admin?

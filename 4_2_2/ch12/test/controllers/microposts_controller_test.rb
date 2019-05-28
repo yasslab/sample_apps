@@ -18,8 +18,8 @@ class MicropostsControllerTest < ActionController::TestCase
     end
     assert_redirected_to login_url
   end
-  
-  
+
+
   test "should redirect destroy for wrong micropost" do
     log_in_as(users(:michael))
     micropost = microposts(:ants)

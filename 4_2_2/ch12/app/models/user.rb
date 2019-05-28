@@ -1,28 +1,28 @@
 class User < ActiveRecord::Base
   has_many :microposts, dependent: :destroy
-  has_many :active_relationships, 
+  has_many :active_relationships,
     class_name:  "Relationship",
     foreign_key: "follower_id",
     dependent:   :destroy
-  has_many :passive_relationships, 
+  has_many :passive_relationships,
     class_name:  "Relationship",
     foreign_key: "followed_id",
     dependent:   :destroy
-  has_many :following, 
-    through: :active_relationships, 
+  has_many :following,
+    through: :active_relationships,
     source:  :followed
-  has_many :followers, 
+  has_many :followers,
     through: :passive_relationships,
     source:  :follower
-    
-  
-  
-  attr_accessor :remember_token, 
+
+
+
+  attr_accessor :remember_token,
                 :activation_token,
                 :reset_token
   before_save   :downcase_email
   before_create :create_activation_digest
-  
+
   validates :name,  presence: true,
                     length: { maximum: 50 }
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
@@ -31,40 +31,40 @@ class User < ActiveRecord::Base
                     format: { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false }
   has_secure_password
-  validates :password, length: { minimum: 6 }, 
+  validates :password, length: { minimum: 6 },
                      presence: true,
                     allow_nil: true
-  
+
   def User.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
                                                   BCrypt::Engine.cost
     BCrypt::Password.create(string, cost: cost)
   end
-  
+
   def User.new_token
     SecureRandom.urlsafe_base64
   end
-  
+
   def remember
     self.remember_token = User.new_token
     update_attribute(:remember_digest, User.digest(remember_token))
   end
-  
+
   def forget
     update_attribute(:remember_digest, nil)
   end
-  
+
   #def authenticated?(remember_token)
   #  return false if remember_digest.nil?
   #  BCrypt::Password.new(remember_digest).is_password?(remember_token)
   #end
-  
+
   def authenticated?(attribute, token)
     digest = send("#{attribute}_digest")
     return false if digest.nil?
     BCrypt::Password.new(digest).is_password?(token)
   end
-  
+
   # アカウントを有効にする
   def activate
     update_attribute(:activated,    true)
@@ -87,12 +87,12 @@ class User < ActiveRecord::Base
   def send_password_reset_email
     UserMailer.password_reset(self).deliver_now
   end
-  
+
   # パスワードリセットの期限が切れている場合はtrueを返す
   def password_reset_expired?
     reset_sent_at < 2.hours.ago
   end
-  
+
   # 試作feedの定義
   # 完全な実装は第12章「ユーザーをフォローする」を参照してください。
   def feed
@@ -106,7 +106,7 @@ class User < ActiveRecord::Base
     Micropost.where("user_id IN (#{following_ids})
                      OR user_id = :user_id", user_id: id)
   end
-  
+
   # Follows a user.
   def follow(other_user)
     self.active_relationships.create(followed_id: other_user.id)
@@ -121,9 +121,9 @@ class User < ActiveRecord::Base
   def following?(other_user)
     self.following.include?(other_user)
   end
-  
-  private 
-  
+
+  private
+
   # メールアドレスをすべて小文字にする
     def downcase_email
       self.email = email.downcase
