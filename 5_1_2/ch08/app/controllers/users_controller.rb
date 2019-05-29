@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     @user = User.new
     # => form_for @user
   end
-  
+
   # POST /users
   def create
     @user = User.new(user_params)
@@ -23,13 +23,13 @@ class UsersController < ApplicationController
       # GET "/users/#{@user.id}" => show
     else
       # Failure
-      render 'new'      
+      render 'new'
     end
   end
-  
+
   def user_params
     params.require(:user).permit(
-      :name, :email, :password, 
+      :name, :email, :password,
       :password_confirmation)
   end
 end

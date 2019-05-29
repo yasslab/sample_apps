@@ -16,7 +16,7 @@ class User < ApplicationRecord
   has_many :followers,
     through: 'passive_relationships',
      source: 'follower'
-  
+
   attr_accessor :remember_token, :activation_token, :reset_token
   before_save   :downcase_email
   before_create :create_activation_digest
@@ -28,7 +28,7 @@ class User < ApplicationRecord
                     format: { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false }
   has_secure_password
-  validates :password, presence: true, 
+  validates :password, presence: true,
     length: { minimum: 6 }, allow_nil: true
 
   def User.digest(string)
@@ -46,11 +46,11 @@ class User < ApplicationRecord
     self.update_attribute(:remember_digest,
       User.digest(remember_token))
   end
-  
+
   def forget
     self.update_attribute(:remember_digest, nil)
   end
-  
+
   # 渡されたトークンがダイジェストと一致したらtrueを返す
   def authenticated?(attribute, token)
     digest = self.send("#{attribute}_digest")
@@ -66,7 +66,7 @@ class User < ApplicationRecord
   def send_activation_email
     UserMailer.account_activation(self).deliver_now
   end
-  
+
   def create_reset_digest
     self.reset_token = User.new_token
     update_attribute(:reset_digest,  User.digest(reset_token))
@@ -80,7 +80,7 @@ class User < ApplicationRecord
   def password_reset_expired?
     reset_sent_at < 2.hours.ago
   end
-  
+
   # 試作feedの定義
   # 完全な実装は次章の「ユーザーをフォローする」を参照
   # current_user.feed
@@ -106,11 +106,11 @@ class User < ApplicationRecord
   end
 
   private
-  
+
     def downcase_email
       self.email = self.email.downcase
     end
-    
+
     def create_activation_digest
       self.activation_token  = User.new_token
       self.activation_digest = User.digest(self.activation_token)

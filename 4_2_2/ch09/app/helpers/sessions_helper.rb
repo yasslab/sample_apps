@@ -1,11 +1,11 @@
 module SessionsHelper
-  
+
   def log_in(user)
     session[:user_id] = user.id
   end
-  
+
   def remember(user)
-    user.remember  # Save DB 
+    user.remember  # Save DB
     cookies.permanent.signed[:user_id] = user.id
     cookies.permanent[:remember_token] = user.remember_token
   end
@@ -21,7 +21,7 @@ module SessionsHelper
     session.delete(:user_id)
     @current_user = nil
   end
-  
+
   def current_user
     # @current_user ||= User.find_by(id: session[:user_id])
     if (user_id = session[:user_id])
@@ -34,15 +34,15 @@ module SessionsHelper
       end
     end
   end
-  
+
   def current_user?(user)
     user == current_user
   end
-  
+
   def logged_in?
     !current_user.nil?
   end
-  
+
   def redirect_back_or(default)
     redirect_to(session[:forwarding_url] || default)
     session.delete(:forwarding_url)
@@ -50,5 +50,5 @@ module SessionsHelper
 
   def store_location
     session[:forwarding_url] = request.url if request.get?
-  end  
+  end
 end

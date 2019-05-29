@@ -18,10 +18,10 @@ class PasswordResetsController < ApplicationController
       render 'new'
     end
   end
-  
+
   def edit
   end
-  
+
   def update
     if params[:user][:password].empty?                  # (3) への対応
       @user.errors.add(:password, "can't be empty")
@@ -34,13 +34,13 @@ class PasswordResetsController < ApplicationController
       render 'edit'                                     # (2) への対応
     end
   end
-  
+
   private
 
     def user_params
       params.require(:user).permit(:password, :password_confirmation)
     end
-    
+
     def get_user
       @user = User.find_by(email: params[:email])
     end
@@ -52,7 +52,7 @@ class PasswordResetsController < ApplicationController
         redirect_to root_url
       end
     end
-    
+
     # トークンが期限切れかどうか確認する
     def check_expiration
       if @user.password_reset_expired?
