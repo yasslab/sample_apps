@@ -1,4 +1,4 @@
-[![Cover Photo](https://raw.githubusercontent.com/yasslab/sample_apps/master/cover.png)](http://railstutorial.jp/)
+[![Cover Photo](https://i.gyazo.com/ce5845fbb7950b5a95b61aa1b02e26b5.png)](http://railstutorial.jp/)
 
 # Rails チュートリアル sample_app コード集
 
@@ -6,6 +6,9 @@
 
 Sample App の開発途中でエラーの原因がどうしても分からないときや、   
 [Railsチュートリアル解説動画](https://railstutorial.jp/#screencast)を途中から視聴するときなどにご活用ください。
+（[お試し視聴](https://railstutorial.jp/trial)も可能です。）
+
+<a href="https://railstutorial.jp/trial"><img src="https://i.gyazo.com/aa8aab4e0428dee5ae91d236dcba5e8b.png" width="400px"></a>
 
 なお、各章の演習の結果や、高度なセットアップなどについては反映されておりません。
 
