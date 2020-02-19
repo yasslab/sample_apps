@@ -1,16 +1,14 @@
-[![Cover Photo](https://i.gyazo.com/ce5845fbb7950b5a95b61aa1b02e26b5.png)](http://railstutorial.jp/)
+[![Cover Photo](http://yasslab.jp/img/header-railstutorial.png)](https://railstutorial.jp/)
 
 # Rails チュートリアル sample_app コード集
 
 [Railsチュートリアル](https://railstutorial.jp/)の各章が終わった状態を集めたリポジトリです。   
 
 Sample App の開発途中でエラーの原因がどうしても分からないときや、   
-[Railsチュートリアル解説動画](https://railstutorial.jp/#screencast)を途中から視聴するときなどにご活用ください。
-（[お試し視聴](https://railstutorial.jp/trial)も可能です。）
+[Railsチュートリアル解説動画](https://railstutorial.jp/screencast)を視聴するときなどにご活用ください。   
+（解説動画は[お試し視聴](https://railstutorial.jp/trial)もできます）
 
 <a href="https://railstutorial.jp/trial"><img src="https://i.gyazo.com/aa8aab4e0428dee5ae91d236dcba5e8b.png" width="400px"></a>
-
-なお、各章の演習の結果や、高度なセットアップなどについては反映されておりません。
 
 ## 各章とディレクトリ名の対応関係
 
@@ -39,6 +37,7 @@ Sample App の開発途中でエラーの原因がどうしても分からない
 - `ch13`: 第13章が終わった状態
 - `ch14`: 第14章が終わった状態
 
+なお、各章の演習の結果や、高度なセットアップなどについては反映されておりません。
 
 ## 各バージョンと動作確認環境
 
@@ -54,8 +53,8 @@ Railsのバージョン毎の動作確認した環境が異なっております
 
 `omake` ディレクトリの中に、試しにアップグレードしてみたコードを置いています。
 
-- [12章](http://railstutorial.jp/chapters/supplement?version=3.2#top)が始められる状態: `ch12_3_2` (Rails3.2版)
-- [12章](http://railstutorial.jp/chapters/supplement?version=3.2#top)が終わった状態: `ch12_4_0` (Rails4.0版)
+- [12章](https://railstutorial.jp/chapters/supplement?version=3.2#top)が始められる状態: `ch12_3_2` (Rails3.2版)
+- [12章](https://railstutorial.jp/chapters/supplement?version=3.2#top)が終わった状態: `ch12_4_0` (Rails4.0版)
 - 完成した Sample App を Rails 4.1 で動くようにしてみた: `sample_app_4_1`
 - 完成した Sample App を Rails 4.2 で動くようにしてみた: `sample_app_4_2`
 
@@ -64,32 +63,32 @@ Cloud9ではなく、手元の環境で構築したい場合はこちらも適�
 
 ### 参考資料
 
-- スライド資料: [Rails解説セミナー: リリースノート解説編](http://www.slideshare.net/yasulab/rails-50634204)
-- スライド資料: [Rails解説セミナー: Railsのアップグレード編](http://www.slideshare.net/yasulab/rails-rails)
-- Railsガイド: [Rails アップグレードガイド](http://railsguides.jp/upgrading_ruby_on_rails.html)
-- Railsガイド: [Ruby on Rails 4.2 リリースノート](http://railsguides.jp/4_2_release_notes.html)
-- Railsガイド: [Ruby on Rails 4.1 リリースノート](http://railsguides.jp/4_1_release_notes.html)
-- Railsガイド: [Ruby on Rails 4.0 リリースノート](http://railsguides.jp/4_0_release_notes.html)
-
-他、開発環境の設定例などは、Railsチュートリアルの[ヘルプページ](http://railstutorial.jp/help)を参照してください。
+- スライド資料: [Rails解説セミナー: リリースノート解説編](https://www.slideshare.net/yasulab/rails-50634204)
+- スライド資料: [Rails解説セミナー: Railsのアップグレード編](https://www.slideshare.net/yasulab/rails-rails)
+- Railsガイド: [Rails アップグレードガイド](https://railsguides.jp/upgrading_ruby_on_rails.html)
+- Railsガイド: [Ruby on Rails 4.2 リリースノート](https://railsguides.jp/4_2_release_notes.html)
+- Railsガイド: [Ruby on Rails 4.1 リリースノート](https://railsguides.jp/4_1_release_notes.html)
+- Railsガイド: [Ruby on Rails 4.0 リリースノート](https://railsguides.jp/4_0_release_notes.html)
 
 
 ## 関連リンク/関連レポジトリ
 
-- 📕 [Railsチュートリアル](https://railstutorial.jp)
-- 📕 [Railsチュートリアル電子書籍](https://railstutorial.jp/#ebook)
-- 📹 [Railsチュートリアル解説動画](https://railstutorial.jp/#screencast)
-- 📙 [Railsガイド](https://railsguides.jp)
-- 📙 [Railsガイド電子書籍](https://railsguides.jp/options.html)
-- :octocat: [Railsガイド (GitHub リポジトリ)](https://github.com/yasslab/railsguides.jp)
+- 🎓 [Railsチュートリアル](https://railstutorial.jp)
+- 🎓 [Railsチュートリアル電子書籍](https://railstutorial.jp/#ebook) 📖
+- 🎓 [Railsチュートリアル解説動画](https://railstutorial.jp/screencast) 📹
+- 🎓 [Railsチュートリアル質問対応](https://railstutorial.jp/#learn-by) 💡
+- 📕 [Railsガイド](https://railsguides.jp)
+- 📕 [Railsガイド電子書籍](https://railsguides.jp/options.html) 📖
+- 📕 [Railsガイド『Proプラン』](https://railsguides.jp/pro) 🔍
+- :octocat: [yasslab/railsguides.jp (GitHub リポジトリ)](https://github.com/yasslab/railsguides.jp)
 
 # 本リポジトリのライセンス
 
 The [MIT License](https://ja.wikipedia.org/wiki/MIT_License)
 
-Copyright &copy; 2015-2018 [YassLab 株式会社](https://yasslab.jp)
+Copyright &copy; 2015-2020 [YassLab 株式会社](https://yasslab.jp)
 
-[![YassLab Logo](https://yasslab.jp/img/logo_800x200.png)](https://yasslab.jp)
+[![YassLab Logo](https://yasslab.jp/img/logos/800x200.png)](https://yasslab.jp)
 
 # Sample App のライセンス
 
