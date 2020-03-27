@@ -6,13 +6,13 @@
 
 『Railsチュートリアルって何？』という方は下記 [YouTube 動画](https://www.youtube.com/watch?v=spbKJhPBGok)をご参照ください。
 
-<a href="https://www.youtube.com/watch?v=spbKJhPBGok"><img src="https://i.gyazo.com/b1438c5a2a9174c7c9c0714287a72761.jpg" width="600px"></a>
+<a href="https://www.youtube.com/watch?v=spbKJhPBGok"><img src="https://i.gyazo.com/b1438c5a2a9174c7c9c0714287a72761.jpg" width="500px"></a>
 
 Sample App の開発途中でエラーの原因がどうしても分からないときや、   
 [Railsチュートリアル解説動画](https://railstutorial.jp/screencast)を視聴するときなどにご活用ください。   
 （解説動画は[お試し視聴](https://railstutorial.jp/trial)もできます）
 
-<a href="https://railstutorial.jp/trial"><img src="https://i.gyazo.com/aa8aab4e0428dee5ae91d236dcba5e8b.png" width="400px"></a>
+<a href="https://railstutorial.jp/trial"><img src="https://i.gyazo.com/aa8aab4e0428dee5ae91d236dcba5e8b.png" width="500px"></a>
 
 ## 各章とディレクトリ名の対応関係
 
