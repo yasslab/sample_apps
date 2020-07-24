@@ -1,4 +1,4 @@
-[![Cover Photo](http://yasslab.jp/img/header-railstutorial.png)](https://railstutorial.jp/)
+[![Railsチュートリアル_バナー画像](http://yasslab.jp/img/header-railstutorial.png)](https://railstutorial.jp/)
 
 # Rails チュートリアル sample_app コード集
 
@@ -66,15 +66,6 @@ Railsのバージョン毎の動作確認した環境が異なっております
 なお、Railsチュートリアルを進められる環境をVagrantで構築する[スターターキット](https://github.com/yasslab/railstutorial.jp_starter_kit)もあります。    
 Cloud9ではなく、手元の環境で構築したい場合はこちらも適宜ご活用して頂けたらと思います。
 
-### 参考資料
-
-- スライド資料: [Rails解説セミナー: リリースノート解説編](https://www.slideshare.net/yasulab/rails-50634204)
-- スライド資料: [Rails解説セミナー: Railsのアップグレード編](https://www.slideshare.net/yasulab/rails-rails)
-- Railsガイド: [Rails アップグレードガイド](https://railsguides.jp/upgrading_ruby_on_rails.html)
-- Railsガイド: [Ruby on Rails 4.2 リリースノート](https://railsguides.jp/4_2_release_notes.html)
-- Railsガイド: [Ruby on Rails 4.1 リリースノート](https://railsguides.jp/4_1_release_notes.html)
-- Railsガイド: [Ruby on Rails 4.0 リリースノート](https://railsguides.jp/4_0_release_notes.html)
-
 
 ## 関連リンク/関連レポジトリ
 
@@ -83,9 +74,10 @@ Cloud9ではなく、手元の環境で構築したい場合はこちらも適�
 - 🎓 [Railsチュートリアル解説動画](https://railstutorial.jp/screencast) 📹
 - 🎓 [Railsチュートリアル質問対応](https://railstutorial.jp/#learn-by) 💡
 - 📕 [Railsガイド](https://railsguides.jp)
-- 📕 [Railsガイド電子書籍](https://railsguides.jp/options.html) 📖
+- 📕 [Railsガイド電子書籍](https://railsguides.jp/ebook) 📖
 - 📕 [Railsガイド『Proプラン』](https://railsguides.jp/pro) 🔍
-- :octocat: [yasslab/railsguides.jp (GitHub リポジトリ)](https://github.com/yasslab/railsguides.jp)
+- 📕 [Railsガイド『Teamプラン』](https://railsguides.jp/pro) 🔍
+- :octocat: [yasslab/railsguides.jp (公開リポジトリ)](https://github.com/yasslab/railsguides.jp)
 
 # 本リポジトリのライセンス
 
