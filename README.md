@@ -15,6 +15,7 @@ Sample App の開発途中でエラーの原因がどうしても分からない
 <a href="https://railstutorial.jp/trial"><img src="https://i.gyazo.com/aa8aab4e0428dee5ae91d236dcba5e8b.png" width="500px"></a>
 
 ## 各章とディレクトリ名の対応関係
+test
 
 対応しているRailsのバージョン毎にディレクトリを分けております。具体的な対応関係は次のとおりです。
 
