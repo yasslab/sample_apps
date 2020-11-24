@@ -44,6 +44,32 @@ Sample App の開発途中でエラーの原因がどうしても分からない
 
 なお、各章の演習の結果や、高度なセットアップなどについては反映されておりません。
 
+## アプリを動かす方法
+例）第6版の11章を動かす
+1. 本リポジトリをクローンし、該当のディレクトリへ移動します。
+```
+$ git clone https://github.com/yasslab/sample_apps.git
+$ cd 6_0_0/ch11
+```
+2. 必要なパッケージをインストールし、`bundle install`（本番環境でのみ必要なgemはスキップ）します。
+```
+$ yarn add jquery@3.4.1 bootstrap@3.4.1
+$ bundle install --without production
+```
+3. データベースを移行します。
+```
+$ rails db:migrate
+```
+4. テストを実行して、正しく動作していることを確認します。
+```
+$ rails test
+```
+5. サンプルユーザーをデータベースに`seed`して、アプリを実行する準備が整いました。
+```
+$ rails db:seed
+$ rails server
+```
+新しいユーザーを登録するか、メールアドレス`example@railstutorial.org`とパスワード（`foobar`）を使用してサンプル管理ユーザーとしてログインできます。
 
 ## オマケ
 
