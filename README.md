@@ -4,13 +4,11 @@
 
 [Railsチュートリアル](https://railstutorial.jp/)の各章が終わった状態を集めたリポジトリです。   
 
-『Railsチュートリアルって何？』という方は下記 [YouTube 動画](https://www.youtube.com/watch?v=spbKJhPBGok)をご参照ください。
+『Railsチュートリアルって何？』という方は[公式YouTubeチャンネル](https://www.youtube.com/channel/UCgSPCgA1ksSPKg1Jp99EEFw)をご参照ください :tv: :sparkles: 
 
-<a href="https://www.youtube.com/watch?v=spbKJhPBGok"><img src="https://i.gyazo.com/b1438c5a2a9174c7c9c0714287a72761.jpg" width="500px"></a>
+<a href="https://www.youtube.com/channel/UCgSPCgA1ksSPKg1Jp99EEFw"><img src="https://i.gyazo.com/b1438c5a2a9174c7c9c0714287a72761.jpg" width="500px"></a>
 
-Sample App の開発途中でエラーの原因がどうしても分からないときや、   
-[Railsチュートリアル解説動画](https://railstutorial.jp/screencast)を視聴するときなどにご活用ください。   
-（解説動画は[お試し視聴](https://railstutorial.jp/trial)もできます）
+Sample App の開発途中でエラーの原因がどうしても分からないときや、[Railsチュートリアル解説動画](https://railstutorial.jp/screencast)を視聴するときなどにご活用ください。（解説動画は[お試し視聴](https://railstutorial.jp/trial)もできます）
 
 <a href="https://railstutorial.jp/trial"><img src="https://i.gyazo.com/aa8aab4e0428dee5ae91d236dcba5e8b.png" width="500px"></a>
 
@@ -24,8 +22,7 @@ Sample App の開発途中でエラーの原因がどうしても分からない
 - [Rails 4.2 対応](https://github.com/yasslab/sample_apps/tree/master/4_2_2) (第3版)
 - [Rails 4.0 対応](https://github.com/yasslab/sample_apps/tree/master/4_0_5) (第2版)
 
-上記の各ディレクトリの中に **各章が終わった状態の** `sample_app` を置いています。   
-例えば `5_1_2` ディレクトリの場合は、次のようになります。
+上記の各ディレクトリの中に **各章が終わった状態の** `sample_app` を置いています。例えば `5_1_2` ディレクトリの場合は、次のようになります。
 
 - `ch01`: 第1章が終わった状態
 - `ch02`: 第2章が終わった状態
@@ -80,14 +77,13 @@ $ rails server
 - 完成した Sample App を Rails 4.1 で動くようにしてみた: `sample_app_4_1`
 - 完成した Sample App を Rails 4.2 で動くようにしてみた: `sample_app_4_2`
 
-なお、Railsチュートリアルを進められる環境をVagrantで構築する[スターターキット](https://github.com/yasslab/railstutorial.jp_starter_kit)もあります。    
-Cloud9ではなく、手元の環境で構築したい場合はこちらも適宜ご活用して頂けたらと思います。
+なお、Railsチュートリアルを進められる環境をVagrantで構築する[スターターキット](https://github.com/yasslab/railstutorial.jp_starter_kit)もあります。Cloud9ではなく、手元の環境で構築したい場合はこちらも適宜ご活用して頂けたらと思います。
 
 
 ## 関連リンク/関連レポジトリ
 
 - 🎓 [Railsチュートリアル](https://railstutorial.jp)
-- 🎓 [Railsチュートリアル電子書籍](https://railstutorial.jp/#ebook) 📖
+- 🎓 [Railsチュートリアル電子書籍](https://railstutorial.jp/ebook) 📖
 - 🎓 [Railsチュートリアル解説動画](https://railstutorial.jp/screencast) 📹
 - 🎓 [Railsチュートリアル質問対応](https://railstutorial.jp/#learn-by) 💡
 - 📕 [Railsガイド](https://railsguides.jp)
@@ -100,15 +96,15 @@ Cloud9ではなく、手元の環境で構築したい場合はこちらも適�
 
 The [MIT License](https://ja.wikipedia.org/wiki/MIT_License)
 
-Copyright &copy; 2015-2020 [YassLab 株式会社](https://yasslab.jp)
+Copyright &copy; 2015-2021 [YassLab Inc.](https://yasslab.jp)
 
 [![YassLab Logo](https://yasslab.jp/img/logos/800x200.png)](https://yasslab.jp)
 
-# Sample App のライセンス
+# Sample Appのライセンス
 
 Ruby on Rails Tutorial: Learn Web Development with Rails. Copyright © 2014 by Michael Hartl.
 
 All source code in the Ruby on Rails Tutorial is available jointly under the MIT License and the Beerware License.
 
-Copyright &copy; 2014-2017 Michael Hartl
+Copyright &copy; 2014-2017 [Michael Hartl](https://www.michaelhartl.com/)
 
