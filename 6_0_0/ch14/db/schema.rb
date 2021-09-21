@@ -51,7 +51,6 @@ ActiveRecord::Schema.define(version: 2021_09_21_120158) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["about_type", "about_id"], name: "index_notifications_on_about"
-    t.index ["to_id", "about_id"], name: "index_notifications_on_to_id_and_about_id", unique: true
     t.index ["to_id"], name: "index_notifications_on_to_id"
   end
 
