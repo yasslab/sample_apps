@@ -88,12 +88,20 @@ class User < ApplicationRecord
 
   # ユーザーをフォローする
   def follow(other_user)
-    following << other_user
+    ActiveRecord::Base.transaction do
+      following << other_user
+      
+      Notification.create(
+        to_id: id,
+        content: "#{other_user.name}さんにフォローされました",
+        about: relationship(other_user),
+      )
+    end
   end
 
   # ユーザーをフォロー解除する
   def unfollow(other_user)
-    active_relationships.find_by(followed_id: other_user.id).destroy
+    relationship(other_user).destroy
   end
 
   # 現在のユーザーがフォローしてたらtrueを返す
@@ -112,5 +120,9 @@ class User < ApplicationRecord
     def create_activation_digest
       self.activation_token  = User.new_token
       self.activation_digest = User.digest(activation_token)
+    end
+
+    def relationship(other_user)
+      active_relationships.find_by(followed_id: other_user.id)
     end
 end
