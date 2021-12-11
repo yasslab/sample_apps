@@ -50,7 +50,7 @@ module SessionsHelper
 
   # 現在のユーザーをログアウトする
   def log_out
-    current_user.notifications.where(event: "first_login", read: false).update_all(read: true)
+    current_user.notifications.not_read_notification("first_login").update_all(read: true)
     forget(current_user)
     session.delete(:user_id)
     @current_user = nil

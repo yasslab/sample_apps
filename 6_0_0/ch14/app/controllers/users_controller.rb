@@ -10,10 +10,10 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @first_login = @user.notifications.where(event: "first_login", read: false).last
+    @first_login = @user.notifications.not_read_notification("first_login").last
     @followers_count = @user.followers_count if @user.followers_count > 1
 
-    last_follower = @user.notifications.where(event: "followed_by", read: false).last
+    last_follower = @user.notifications.not_read_notification("followed_by").last
     if last_follower.present?
       last_follower_id = last_follower.target_id
       @last_follower_name = User.find(last_follower_id).name
