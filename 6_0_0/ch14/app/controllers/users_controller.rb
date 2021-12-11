@@ -10,6 +10,15 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @first_login = @user.notifications.where(event: "first_login", read: false).last
+    @followers_count = @user.followers_count if @user.followers_count > 1
+
+    last_follower = @user.notifications.where(event: "followed_by", read: false).last
+    if last_follower.present?
+      last_follower_id = last_follower.target_id
+      @last_follower_name = User.find(last_follower_id).name
+    end
+
     @microposts = @user.microposts.paginate(page: params[:page])
   end
 
@@ -20,6 +29,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      @user.notifications.create!(event: "first_login", target_id: @user.id)
       @user.send_activation_email
       flash[:info] = "Please check your email to activate your account."
       redirect_to root_url
@@ -59,6 +69,7 @@ class UsersController < ApplicationController
     @title = "Followers"
     @user  = User.find(params[:id])
     @users = @user.followers.paginate(page: params[:page])
+    @user.read_notifications("followed_by")
     render 'show_follow'
   end
 

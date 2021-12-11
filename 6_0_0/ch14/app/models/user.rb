@@ -9,6 +9,7 @@ class User < ApplicationRecord
                                    dependent:   :destroy
   has_many :following, through: :active_relationships,  source: :followed
   has_many :followers, through: :passive_relationships, source: :follower
+  has_many :notifications, dependent: :destroy
   attr_accessor :remember_token, :activation_token, :reset_token
   before_save   :downcase_email
   before_create :create_activation_digest
@@ -99,6 +100,20 @@ class User < ApplicationRecord
   # 現在のユーザーがフォローしてたらtrueを返す
   def following?(other_user)
     following.include?(other_user)
+  end
+
+  # 関連通知を確認済みに変更する
+  def read_notifications(event)
+    self.notifications.where(event: event, read: false).update_all(read: true)
+  end
+
+  # 5分以内にフォローされたユーザーをカウントする
+  def followers_count
+    self.notifications.where(
+      event: "followed_by",
+      read: false,
+      created_at: 5.minute.ago..Time.zone.now
+    ).count
   end
 
   private

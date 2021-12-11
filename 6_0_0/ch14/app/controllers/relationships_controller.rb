@@ -4,6 +4,7 @@ class RelationshipsController < ApplicationController
   def create
     @user = User.find(params[:followed_id])
     current_user.follow(@user)
+    @user.notifications.create!(event: "followed_by", target_id: current_user.id)
     respond_to do |format|
       format.html { redirect_to @user }
       format.js
@@ -12,6 +13,8 @@ class RelationshipsController < ApplicationController
 
   def destroy
     @user = Relationship.find(params[:id]).followed
+    @user.read_notifications("followed_by")
+
     current_user.unfollow(@user)
     respond_to do |format|
       format.html { redirect_to @user }

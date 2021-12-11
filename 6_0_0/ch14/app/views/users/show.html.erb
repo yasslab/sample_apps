@@ -1,5 +1,18 @@
 <% provide(:title, @user.name) %>
 <div class="row">
+  <%= form_tag(logout_path, method: :delete) do %>
+    <%= submit_tag("ログアウト") %>
+  <% end %>
+  <% if @first_login.present?%>
+    <h2>初回ログインありがとうございます。</h2>
+  <% end %>
+  <% if @last_follower_name.present? && @followers_count.nil? %>
+    <div class="last_follower_name"><%= @last_follower_name %>さんにフォローされました</div>
+  <% end %>
+  <% if @last_follower_name.present? && @followers_count.present? %>
+    <div class="last_follower_name"><%= @last_follower_name %>さん</div>
+    <div class="other_follower_count">他<%= @followers_count %>名にフォローされました</div>
+  <% end %>
   <aside class="col-md-4">
     <section class="user_info">
       <h1>
