@@ -12,7 +12,7 @@ Sample App の開発途中でエラーの原因がどうしても分からない
 
 <a href="https://railstutorial.jp/trial"><img src="https://i.gyazo.com/aa8aab4e0428dee5ae91d236dcba5e8b.png" width="500px"></a>
 
-## 各章とディレクトリ名の対応関係
+## :open_file_folder: 各章とディレクトリ名の対応関係
 
 対応しているRailsのバージョン毎にディレクトリを分けております。具体的な対応関係は次のとおりです。
 
@@ -42,12 +42,13 @@ Sample App の開発途中でエラーの原因がどうしても分からない
 
 なお、各章の演習の結果や、高度なセットアップなどについては反映されておりません。
 
-## 動作確認
-本リポジトリにあるサンプルコードは [AWS Cloud9](https://aws.amazon.com/jp/cloud9/) 上で動作確認しています。   
-macOS や Windows などのローカル環境では下記の手順で動かないこともあります。あらかじめご了承ください。
+## :white_check_mark: 動作環境と注意事項
+本リポジトリにあるサンプルコードは [AWS Cloud9](https://aws.amazon.com/jp/cloud9/) 上で動作確認しています。macOS や Windows などのローカル環境では下記の手順で動かないこともあります。あらかじめご了承ください。
+
+:scroll: 参考: [「熟練」になるとは - Railsチュートリアル](https://railstutorial.jp/chapters/beginning#aside-technical_sophistication)
 
 
-## アプリを動かす方法
+## :wrench: アプリを動かす方法
 例）第6版の11章を動かす
 1. 本リポジトリをクローンし、該当のディレクトリへ移動します。
 ```
@@ -74,8 +75,8 @@ $ rails server
 ```
 新しいユーザーを登録するか、メールアドレス`example@railstutorial.org`とパスワード（`foobar`）を使用してサンプル管理ユーザーとしてログインできます。
 
+<!--
 ## オマケ
-
 `omake` ディレクトリの中に、試しにアップグレードしてみたコードを置いています。
 
 - [12章](https://railstutorial.jp/chapters/supplement?version=3.2#top)が始められる状態: `ch12_3_2` (Rails3.2版)
@@ -84,9 +85,9 @@ $ rails server
 - 完成した Sample App を Rails 4.2 で動くようにしてみた: `sample_app_4_2`
 
 なお、Railsチュートリアルを進められる環境をVagrantで構築する[スターターキット](https://github.com/yasslab/railstutorial.jp_starter_kit)もあります。Cloud9ではなく、手元の環境で構築したい場合はこちらも適宜ご活用して頂けたらと思います。
+-->
 
-
-## 関連リンク/関連レポジトリ
+## :mortar_board: 関連リンク/関連レポジトリ
 
 - 🎓 [Railsチュートリアル](https://railstutorial.jp)
 - 🎓 [Railsチュートリアル電子書籍](https://railstutorial.jp/ebook) 📖
@@ -98,7 +99,7 @@ $ rails server
 - 📕 [Railsガイド『Teamプラン』](https://railsguides.jp/pro) 🔍
 - :octocat: [yasslab/railsguides.jp (公開リポジトリ)](https://github.com/yasslab/railsguides.jp)
 
-# 本リポジトリのライセンス
+## :octocat: 本リポジトリのライセンス
 
 The [MIT License](https://ja.wikipedia.org/wiki/MIT_License)
 
@@ -106,7 +107,7 @@ Copyright &copy; 2015-2021 [YassLab Inc.](https://yasslab.jp)
 
 [![YassLab Logo](https://yasslab.jp/img/logos/800x200.png)](https://yasslab.jp)
 
-# Sample Appのライセンス
+## :octocat: Sample Appのライセンス
 
 Ruby on Rails Tutorial: Learn Web Development with Rails. Copyright © 2014 by Michael Hartl.
 
