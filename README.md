@@ -16,11 +16,12 @@ Sample App の開発途中でエラーの原因がどうしても分からない
 
 対応しているRailsのバージョン毎にディレクトリを分けております。具体的な対応関係は次のとおりです。
 
-- [Rails 6.0 対応](https://github.com/yasslab/sample_apps/tree/master/6_0_0) (第6版)
-- [Rails 5.1 対応](https://github.com/yasslab/sample_apps/tree/master/5_1_2) (第4版)
-- [Rails 5.0 対応](https://github.com/yasslab/sample_apps/tree/master/5_0_0_1) (第4版)
-- [Rails 4.2 対応](https://github.com/yasslab/sample_apps/tree/master/4_2_2) (第3版)
-- [Rails 4.0 対応](https://github.com/yasslab/sample_apps/tree/master/4_0_5) (第2版)
+- [Rails 6.1 対応](https://github.com/yasslab/sample_apps/tree/main/6_1) (第6版)
+- [Rails 6.0 対応](https://github.com/yasslab/sample_apps/tree/main/6_0) (第6版)
+- [Rails 5.1 対応](https://github.com/yasslab/sample_apps/tree/main/5_1) (第4版)
+- [Rails 5.0 対応](https://github.com/yasslab/sample_apps/tree/main/5_0) (第4版)
+- [Rails 4.2 対応](https://github.com/yasslab/sample_apps/tree/main/4_2) (第3版)
+- [Rails 4.0 対応](https://github.com/yasslab/sample_apps/tree/main/4_0) (第2版)
 
 上記の各ディレクトリの中に **各章が終わった状態の** `sample_app` を置いています。例えば `5_1_2` ディレクトリの場合は、次のようになります。
 
@@ -40,6 +41,11 @@ Sample App の開発途中でエラーの原因がどうしても分からない
 - `ch14`: 第14章が終わった状態
 
 なお、各章の演習の結果や、高度なセットアップなどについては反映されておりません。
+
+## 動作確認
+本リポジトリにあるサンプルコードは [AWS Cloud9](https://aws.amazon.com/jp/cloud9/) 上で動作確認しています。   
+macOS や Windows などのローカル環境では下記の手順で動かないこともあります。あらかじめご了承ください。
+
 
 ## アプリを動かす方法
 例）第6版の11章を動かす
