@@ -42,7 +42,7 @@ Sample App の開発途中でエラーの原因がどうしても分からない
 - `ch13`: 第13章が終わった状態
 - `ch14`: 第14章が終わった状態
 
-なお、各章の演習の結果や、高度なセットアップなどは反映されておりません。
+なお、各章の[演習](https://railstutorial.jp/chapters/beginning#sec-exercises_rails_server)の結果や、[高度なセットアップ](https://railstutorial.jp/chapters/static_pages#sec-advanced_testing_setup)などは反映されておりません。
 
 <br>
 
