@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  to_user: one
+  from_user: one
+  action: 1
+  checked: false
+
+two:
+  to_user: two
+  from_user: two
+  action: 1
+  checked: false

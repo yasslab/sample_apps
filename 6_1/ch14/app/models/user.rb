@@ -8,6 +8,12 @@ class User < ApplicationRecord
                                    dependent:   :destroy
   has_many :following, through: :active_relationships, source: :followed
   has_many :followers, through: :passive_relationships, source: :follower
+  has_many :notifications, class_name: "Notification",
+                          foreign_key: "to_user_id",
+                          dependent: :destroy
+  has_many :active_notifications, class_name: "Notification",
+                     foreign_key: "from_user_id",
+                     dependent: :destroy
   attr_accessor :remember_token, :activation_token, :reset_token
   before_save   :downcase_email
   before_create :create_activation_digest
@@ -100,6 +106,36 @@ class User < ApplicationRecord
   # 現在のユーザーがフォローしてたらtrueを返す
   def following?(other_user)
     following.include?(other_user)
+  end
+
+  # フォロー通知を作成
+  def create_follow_notification(to_user)
+    active_notifications.create(to_user: to_user, action: :follow)
+  end
+
+  # フォロー通知を削除
+  def destroy_follow_notification(to_user)
+    active_notifications.uncheck.find_by(to_user: to_user).destroy
+  end
+
+  # 初回ログイン通知を作成
+  def create_first_login_notification
+    notifications.create(action: :first_login)
+  end
+
+  def recent_notifications
+    n = []
+    now = Time.current
+    uncheck_notifications = notifications.uncheck.order(created_at: :desc)
+    summary = uncheck_notifications.where(created_at: now..now-5.minutes)
+    old = uncheck_notifications.where.not(created_at: now..now-5.minutes)
+
+    n << "#{summary.first.from_user.name}さん他3名にフォローされました" if summary.count > 1
+    old.each do |o|
+      n << o.notify_message
+    end
+
+    n
   end
 
   private
