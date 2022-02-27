@@ -62,6 +62,7 @@ $ cd 6_0/ch11
 ```
 2. 必要なパッケージをインストールし、`bundle install`（本番環境でのみ必要なgemはスキップ）します。
 ```
+$ yarn install --check-files
 $ yarn add jquery@3.4.1 bootstrap@3.4.1
 $ bundle install --without production
 ```
