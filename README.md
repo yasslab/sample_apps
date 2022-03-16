@@ -49,7 +49,7 @@ Sample App の開発途中でエラーの原因がどうしても分からない
 ## :white_check_mark: 動作環境と注意事項
 本リポジトリにあるサンプルコードは [AWS Cloud9](https://aws.amazon.com/jp/cloud9/) 上で動作確認しています。macOS や Windows などのローカル環境では下記の手順で動かないこともあります。あらかじめご了承ください。
 
-:scroll: 参考: [「熟練」になるとは - Railsチュートリアル](https://railstutorial.jp/chapters/beginning#aside-technical_sophistication)
+:scroll: [開発環境（AWS Cloud9） - Railsチュートリアル](https://railstutorial.jp/chapters/beginning#sec-development_environment)
 
 <br>
 
