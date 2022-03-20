@@ -47,14 +47,14 @@ Sample App の開発途中でエラーの原因がどうしても分からない
 <br>
 
 ## :white_check_mark: 動作環境と注意事項
-本リポジトリにあるサンプルコードは [AWS Cloud9](https://aws.amazon.com/jp/cloud9/) 上で動作確認しています。macOS や Windows などのローカル環境では下記の手順で動かないこともあります。あらかじめご了承ください。
+**本リポジトリにあるサンプルコードは [AWS Cloud9](https://aws.amazon.com/jp/cloud9/) 上で動作確認しています。** macOS や Windows などのローカル環境では下記の手順で動かないこともあります。あらかじめご了承ください。
 
 :scroll: [開発環境（AWS Cloud9） - Railsチュートリアル](https://railstutorial.jp/chapters/beginning#sec-development_environment)
 
 <br>
 
 ## :wrench: アプリを動かす方法
-例）第6版の11章を動かす
+例）[Rails 6.0 対応](#open_file_folder-各章とディレクトリ名の対応関係)の第11章を動かす
 1. 本リポジトリをクローンし、該当のディレクトリへ移動します。
 ```
 $ git clone https://github.com/yasslab/sample_apps.git
@@ -101,7 +101,7 @@ $ rails server
 
 The [MIT License](https://ja.wikipedia.org/wiki/MIT_License)
 
-Copyright &copy; 2015-2022 [YassLab Inc.](https://yasslab.jp)
+Copyright &copy; [YassLab Inc.](https://yasslab.jp)
 
 [![YassLab Logo](https://yasslab.jp/img/logos/800x200.png)](https://yasslab.jp)
 
@@ -109,9 +109,9 @@ Copyright &copy; 2015-2022 [YassLab Inc.](https://yasslab.jp)
 
 ## :octocat: Sample Appのライセンス
 
-Ruby on Rails Tutorial: Learn Web Development with Rails. Copyright © 2014 by Michael Hartl.
+Ruby on Rails Tutorial: Learn Web Development with Rails.
 
 All source code in the Ruby on Rails Tutorial is available jointly under the MIT License and the Beerware License.
 
-Copyright &copy; 2014-2017 [Michael Hartl](https://www.michaelhartl.com/)
+Copyright &copy; [Michael Hartl](https://www.michaelhartl.com/)
 
