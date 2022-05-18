@@ -7,7 +7,7 @@ module SessionsHelper
   # ユーザーを永続的に復元できるようになった
   def remember(user)
     user.remember # => DB: remember_digest
-    cookies.permanent.encrypted[:user_id] = user.id
+    cookies.permanent.signed[:user_id] = user.id
     cookies.permanent[:remember_token] = user.remember_token
   end
 
@@ -25,7 +25,7 @@ module SessionsHelper
     if (user_id = session[:user_id])
       @current_user ||= User.find_by(id: user_id)
 
-    elsif (user_id = cookies.encrypted[:user_id])
+    elsif (user_id = cookies.signed[:user_id])
       # raise
       user = User.find_by(id: user_id)
       if user && user.authenticated?(:remember, cookies[:remember_token])
