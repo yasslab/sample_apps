@@ -54,32 +54,43 @@ Sample App の開発途中でエラーの原因がどうしても分からない
 <br>
 
 ## :wrench: アプリを動かす方法
-例）[Rails 6.0 対応](#open_file_folder-各章とディレクトリ名の対応関係)の第11章を動かす
+版番号や章番号ごとにセットアップ方法は異なりますが、大まかな流れは基本的に同じです。例えば[Rails 6.0 対応](#open_file_folder-各章とディレクトリ名の対応関係)の第11章を動かす場合は次のようになります。
+
 1. 本リポジトリをクローンし、該当のディレクトリへ移動します。
-```
-$ git clone https://github.com/yasslab/sample_apps.git
-$ cd 6_0/ch11
-```
+    ```
+    $ git clone https://github.com/yasslab/sample_apps.git
+    $ cd 6_0/ch11
+    ```
+
 2. 必要なパッケージをインストールし、`bundle install`（本番環境でのみ必要なgemはスキップ）します。
-```
-$ yarn install --check-files
-$ yarn add jquery@3.4.1 bootstrap@3.4.1
-$ bundle install --without production
-```
+    ```
+    $ yarn install --check-files
+    $ yarn add jquery@3.4.1 bootstrap@3.4.1
+    $ bundle install --without production
+    ```
+
 3. データベースを移行します。
-```
-$ rails db:migrate
-```
+    ```
+    $ rails db:migrate
+    ```
+
 4. テストを実行して、正しく動作していることを確認します。
-```
-$ rails test
-```
+    ```
+    $ rails test
+    ```
+
 5. サンプルユーザーをデータベースに`seed`して、アプリを実行する準備が整いました。
-```
-$ rails db:seed
-$ rails server
-```
-新しいユーザーを登録するか、メールアドレス`example@railstutorial.org`とパスワード（`foobar`）を使用してサンプル管理ユーザーとしてログインできます。
+    ```
+    $ rails db:seed
+    $ rails server
+    ```
+
+無事にセットアップが完了できていれば、ブラウザから [localhost:3000](http://localhost:3000/) にアクセスするとトップ画面が表示されます。ログインページから以下のメールアドレスとパスワードを入力するとログインできます。
+
+- メールアドレス: `example@railstutorial.org`
+- パスワード: `foobar`
+
+なお、第13章以降のSample Appを本番環境にデプロイする場合は、別途[Amazon S3のセットアップ](https://github.com/yasslab/sample_apps/blob/f797b502de9e033be5d14b5f34429e48ce453dea/6_0/ch13/config/storage.yml#L11-L14)が必要になります。
 
 <br>
 
