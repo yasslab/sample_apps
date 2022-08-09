@@ -201,6 +201,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-18
+  x86_64-darwin-20
   x86_64-linux
 
 DEPENDENCIES
@@ -222,6 +223,9 @@ DEPENDENCIES
   web-console (= 4.1.0)
   webdrivers (= 4.6.0)
   webpacker (= 5.4.0)
+
+RUBY VERSION
+   ruby 2.7.6p219
 
 BUNDLED WITH
    2.2.17
