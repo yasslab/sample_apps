@@ -56,6 +56,10 @@ Sample App の開発途中でエラーの原因がどうしても分からない
 
 :scroll: [開発環境（AWS Cloud9） - Railsチュートリアル](https://railstutorial.jp/chapters/beginning#sec-development_environment)
 
+また2022年9月より VS Code + Docker 環境でもチャレンジできるようになりました。詳細は下記の note 記事をご参照ください。
+
+🐳 [devcontainerを使って開発してみよう - note](https://note.com/yasslab/n/n5dcbd7eb43c6)
+
 <br>
 
 ## :wrench: アプリを動かす方法
