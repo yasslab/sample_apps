@@ -44,6 +44,11 @@ Sample App の開発途中でエラーの原因がどうしても分からない
 
 なお、各章の[演習](https://railstutorial.jp/chapters/beginning#sec-exercises_rails_server)の結果や、[高度なセットアップ](https://railstutorial.jp/chapters/static_pages#sec-advanced_testing_setup)などは反映されておりません。
 
+またオマケとして、完走者向けコンテンツ集「[読み物ガイド](https://railstutorial.jp/reading_guide)」にある「[Ruby/Railsのバージョンを上げてみよう](https://railstutorial.jp/reading_guide#exercise)」に着手したディレクトリ ([7_0](https://github.com/yasslab/sample_apps/tree/main/7_0)) も用意しています。アップグレードの練習をしたい場面などでご活用ください :gift: 
+
+<br>
+
+
 <br>
 
 ## :white_check_mark: 動作環境と注意事項
