@@ -1,4 +1,4 @@
-  require "active_support/inflector"
+require "active_support/inflector"
   # Guardのマッチング規則を定義
   guard :minitest, all_on_start: false do
     watch(%r{^test/(.*)/?(.*)_test\.rb$})

@@ -6,7 +6,7 @@ class MicropostTest < ActiveSupport::TestCase
     @user = users(:michael)
     @micropost = @user.microposts.build(content: "Lorem ipsum")
   end
-  
+
   test "should be valid" do
     assert @micropost.valid?
   end
@@ -25,7 +25,7 @@ class MicropostTest < ActiveSupport::TestCase
     @micropost.content = "a" * 141
     assert_not @micropost.valid?
   end
-  
+
   test "order should be most recent first" do
     assert_equal microposts(:most_recent), Micropost.first
   end

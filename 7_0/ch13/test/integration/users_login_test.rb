@@ -87,9 +87,9 @@ class RememberingTest < UsersLogin
   end
 
   test "login without remembering" do
-    # Log in to set the cookie.
+    # Cookieを保存してログイン
     log_in_as(@user, remember_me: '1')
-    # Log in again and verify that the cookie is deleted.
+    # Cookieが削除されていることを検証してからログイン
     log_in_as(@user, remember_me: '0')
     assert cookies[:remember_token].blank?
   end

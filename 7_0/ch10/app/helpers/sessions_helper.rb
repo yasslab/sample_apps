@@ -8,7 +8,7 @@ module SessionsHelper
     session[:session_token] = user.session_token
   end
 
-  # ユーザーを永続セッションに保存する
+  # 永続セッションのためにユーザーをデータベースに記憶する
   def remember(user)
     user.remember
     cookies.permanent.encrypted[:user_id] = user.id
@@ -36,7 +36,6 @@ module SessionsHelper
     user && user == current_user
   end
 
-
   # ユーザーがログインしていればtrue、その他ならfalseを返す
   def logged_in?
     !current_user.nil?
@@ -53,9 +52,9 @@ module SessionsHelper
   def log_out
     forget(current_user)
     reset_session
-    @current_user = nil
+    @current_user = nil   # 安全のため
   end
-  
+
   # アクセスしようとしたURLを保存する
   def store_location
     session[:forwarding_url] = request.original_url if request.get?
