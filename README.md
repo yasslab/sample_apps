@@ -18,6 +18,7 @@ Sample App の開発途中でエラーの原因がどうしても分からない
 
 対応しているRailsのバージョン毎にディレクトリを分けております。具体的な対応関係は次のとおりです。
 
+- [Rails 7.0 対応](https://github.com/yasslab/sample_apps/tree/main/7_0) (第7版)
 - [Rails 6.1 対応](https://github.com/yasslab/sample_apps/tree/main/6_1) (第6版)
 - [Rails 6.0 対応](https://github.com/yasslab/sample_apps/tree/main/6_0) (第6版)
 - [Rails 5.1 対応](https://github.com/yasslab/sample_apps/tree/main/5_1) (第4版)
