@@ -33,6 +33,3 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
-
-# テスト用のdbファイルを無視する
-db/test.*
