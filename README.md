@@ -45,11 +45,6 @@ Sample App の開発途中でエラーの原因がどうしても分からない
 
 なお、各章の[演習](https://railstutorial.jp/chapters/beginning#sec-exercises_rails_server)の結果や、[高度なセットアップ](https://railstutorial.jp/chapters/static_pages#sec-advanced_testing_setup)などは反映されておりません。
 
-またオマケとして、完走者向けコンテンツ集「[読み物ガイド](https://railstutorial.jp/reading_guide)」にある「[Ruby/Railsのバージョンを上げてみよう](https://railstutorial.jp/reading_guide#exercise)」に着手したディレクトリ ([7_0](https://github.com/yasslab/sample_apps/tree/main/7_0)) も用意しています。アップグレードの練習をしたい場面などでご活用ください :gift: 
-
-<br>
-
-
 <br>
 
 ## :white_check_mark: 動作環境と注意事項
@@ -66,19 +61,18 @@ Sample App の開発途中でエラーの原因がどうしても分からない
 <br>
 
 ## :wrench: アプリを動かす方法
-版番号や章番号ごとにセットアップ方法は異なりますが、大まかな流れは基本的に同じです。例えば[Rails 6.0 対応](#open_file_folder-各章とディレクトリ名の対応関係)の第11章を動かす場合は次のようになります。
+版番号や章番号ごとにセットアップ方法は異なりますが、大まかな流れは基本的に同じです。例えば[Rails 7.0 対応](#open_file_folder-各章とディレクトリ名の対応関係)の第11章を動かす場合は次のようになります。
 
 1. 本リポジトリをクローンし、該当のディレクトリへ移動します。
     ```
     $ git clone https://github.com/yasslab/sample_apps.git
-    $ cd 6_0/ch11
+    $ cd 7_0/ch11
     ```
 
-2. 必要なパッケージをインストールし、`bundle install`（本番環境でのみ必要なgemはスキップ）します。
+2. 本番環境でのみ必要なgemはスキップして`bundle install`し、必要なフレームワークをインストールします。この時**conflictが起こった場合は、全て「n（上書きしない）」を選択**してください。
     ```
-    $ yarn install --check-files
-    $ yarn add jquery@3.4.1 bootstrap@3.4.1
     $ bundle install --without production
+    $ rails importmap:install turbo:install stimulus:install
     ```
 
 3. データベースを移行します。
