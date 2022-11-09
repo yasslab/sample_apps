@@ -69,7 +69,7 @@ Sample App の開発途中でエラーの原因がどうしても分からない
     $ cd 7_0/ch11
     ```
 
-2. 本番環境でのみ必要なgemはスキップして`bundle install`し、必要なフレームワークをインストールします。
+2. 本番環境でのみ必要なgemはスキップして`bundle install`し、必要なフレームワークをインストールします。この時**conflictが起こった場合は、全て「n（上書きしない）」を選択**してください。
     ```
     $ bundle install --without production
     $ rails importmap:install turbo:install stimulus:install
