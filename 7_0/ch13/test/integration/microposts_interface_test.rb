@@ -34,7 +34,7 @@ class MicropostsInterfaceTest < MicropostsInterface
   end
 
   test "should have micropost delete links on own profile page" do
-    get users_path(@user)
+    get user_path(@user)
     assert_select 'a', text: 'delete'
   end
 
