@@ -8,7 +8,7 @@ module SessionsHelper
     session[:session_token] = user.session_token
   end
 
-  # 永続セッションのためにユーザーをデータベースに記憶する
+  # 永続的セッションのためにユーザーをデータベースに記憶する
   def remember(user)
     user.remember
     cookies.permanent.encrypted[:user_id] = user.id
