@@ -17,6 +17,9 @@ Rails.application.configure do
   # Enable server timing
   config.server_timing = true
 
+  # Add the following line to disable forgery_protection_origin_check
+  config.action_controller.forgery_protection_origin_check = false
+
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
   if Rails.root.join("tmp/caching-dev.txt").exist?
@@ -39,13 +42,11 @@ Rails.application.configure do
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
 
+  host = 'example.com' # ここをコピペすると失敗します。自分の環境のホストに変えてください。
   # クラウドIDEの場合は以下をお使いください
-  # host = '<hex string>.vfs.cloud9.us-east-2.amazonaws.com' # 自分の環境のホストに変えてください。
-  # config.action_mailer.default_url_options = { host: host, protocol: 'https' }
-
+  config.action_mailer.default_url_options = { host: host, protocol: 'https' }
   # localhostで開発している場合は以下をお使いください
-  host = 'localhost:3000'
-  config.action_mailer.default_url_options = { host: host, protocol: 'http' }
+  # config.action_mailer.default_url_options = { host: host, protocol: 'http' }
 
   config.action_mailer.perform_caching = false
 
@@ -67,6 +68,11 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
+  pf_domain = ENV['GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN']
+  config.action_dispatch.default_headers = {
+    'X-Frame-Options' => "ALLOW-FROM #{pf_domain}"
+  }
+
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
 
@@ -76,6 +82,9 @@ Rails.application.configure do
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
 
-  # Cloud9 への接続を許可する
-  config.hosts.clear
+  # Allow requests from our preview domain.
+  pf_host = "#{ENV['CODESPACE_NAME']}-3000.#{pf_domain}"
+  config.hosts << pf_host
+
+  config.action_cable.allowed_request_origins = ["https://#{pf_host}"]
 end
