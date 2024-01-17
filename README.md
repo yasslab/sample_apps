@@ -62,18 +62,60 @@ Sample App の開発途中でエラーの原因がどうしても分からない
 <br>
 
 ## :wrench: アプリを動かす方法
-版番号や章番号ごとにセットアップ方法は異なりますが、大まかな流れは基本的に同じです。例えば[Rails 7.0 対応](#open_file_folder-各章とディレクトリ名の対応関係)の第11章を動かす場合は次のようになります。
+版番号や章番号ごとにセットアップ方法は異なります。例えば Codespaces を利用して[Rails 7.0 対応](#open_file_folder-各章とディレクトリ名の対応関係)の第11章を動かす場合は次のようになります。
+Codespacesの操作について詳しくは[『1.2.1開発環境』](https://railstutorial.jp/chapters/beginning?version=7.0#sec-development_environment)が、GitおよびGitHubについて詳しくは[『Git/GitHub編』](https://railstutorial.jp/git) が参考になります。
 
-1. 本リポジトリをクローンし、該当のディレクトリへ移動します。
+1. GitHubで、アプリを動かすための[リポジトリを作成](https://github.com/new)しておきます。ここではリポジトリ名をsample_ch11としておきます。
+
+1. 本リポジトリをフォークしてからPCなどにクローンし、該当のディレクトリへ移動します。移動したディレクトリでGitの初期化からコミットまでを行います。
+    ```
+    $ git clone https://github.com/<あなたのアカウント名>/sample_apps.git
+    $ cd 7_0/ch11
+    $ git init
+    $ git add .
+    $ git commit -m"第11章動作確認" 
+    ```
+
+1. 手順1で作成したリポジトリで表示されるURLをリモートリポジトリURLとして設定し、プッシュします。
+
+    ```
+    # HTTPS接続の場合
+    $ git remote add origin https://github.com/<あなたのアカウント名>/sample_ch11.git
+    $ git remote -v
+    origin  https://github.com/<あなたのアカウント名>/sample_ch11.git (fetch)
+    origin  https://github.com/<あなたのアカウント名>/sample_ch11.git (push)
+    $ git push -u origin main
+    ```
+
+1. 手順1で作成したリポジトリ(ここではsample_ch11)で、「Code」から「Codespaces」タブに移動し、「Create codespace on main」をクリックすると環境構築がスタートします。しばらく待つとシンプルブラウザに「ActiveRecord::PendingMigrationError」が表示されるので、少し下の「Run pending migrations」ボタンをクリックするか、ターミナルを開いて以下のコマンドを実行するとデータベースが移行されます。
+    ```
+    $ rails db:migrate
+    ```
+
+1. テストを実行して、正しく動作していることを確認します。
+    ```
+    $ rails test
+    ```
+
+1. サンプルユーザーをデータベースに`seed`します。
+    ```
+    $ rails db:seed
+    ```
+
+結果はシンプルブラウザにも表示されていますが、実際のブラウザとは表示が異なる場合もあるので、シンプルブラウザのタブか「ポート」タブからブラウザウィンドウを開いておくと良いでしょう。無事にセットアップが完了できていれば、トップ画面が表示されます。ログインページから以下のメールアドレスとパスワードを入力するとログインできます。
+
+ <details>
+    <summary>ここをクリックすると Codespaces 以外の環境で動かす方法が開きます。</summary>
+
+ 1. 本リポジトリをクローンし、該当のディレクトリへ移動します。
     ```
     $ git clone https://github.com/yasslab/sample_apps.git
     $ cd 7_0/ch11
     ```
 
-2. 本番環境でのみ必要なgemはスキップして`bundle install`し、必要なフレームワークをインストールします。この時**conflictが起こった場合は、全て「n（上書きしない）」を選択**してください。
+2. 本番環境でのみ必要なgemはスキップして`bundle install`します。
     ```
     $ bundle install --without production
-    $ rails importmap:install turbo:install stimulus:install
     ```
 
 3. データベースを移行します。
@@ -92,7 +134,8 @@ Sample App の開発途中でエラーの原因がどうしても分からない
     $ rails server
     ```
 
-無事にセットアップが完了できていれば、ブラウザから [localhost:3000](http://localhost:3000/) にアクセスするとトップ画面が表示されます。ログインページから以下のメールアドレスとパスワードを入力するとログインできます。
+無事にセットアップが完了できていれば、ブラウザから [localhost:3000](http://localhost:3000/) にアクセスするとトップ画面が表示されます。
+</details>
 
 - メールアドレス: `example@railstutorial.org`
 - パスワード: `foobar`
