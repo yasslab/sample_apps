@@ -43,14 +43,15 @@ Sample App の開発途中でエラーの原因がどうしても分からない
 - `ch13`: 第13章が終わった状態
 - `ch14`: 第14章が終わった状態
 
-なお、各章の[演習](https://railstutorial.jp/chapters/beginning#sec-exercises_rails_server)の結果や、[高度なセットアップ](https://railstutorial.jp/chapters/static_pages#sec-advanced_testing_setup)などは反映されておりません。
+なお、各章の[演習](https://railstutorial.jp/chapters/beginning#sec-exercises_rails_server)の結果や、[プロ品質のデプロイ](https://railstutorial.jp/chapters/sign_up?version=7.0#sec-professional_grade_deployment)などは反映されておりません。
 
 <br>
 
 ## :white_check_mark: 動作環境と注意事項
-**本リポジトリにあるサンプルコードは [AWS Cloud9](https://aws.amazon.com/jp/cloud9/) 上で動作確認しています。** macOS や Windows などのローカル環境では下記の手順で動かないこともあります。あらかじめご了承ください。
+**本リポジトリにあるサンプルコードは、第7版では [Railsチュートリアル用にカスタマイズしたGitHub Codespaces](https://github.com/yasslab/codespaces-railstutorial) 上で、第6版以前は [AWS Cloud9](https://aws.amazon.com/jp/cloud9/) 上で動作確認しています。** macOS や Windows などのローカル環境では下記の手順で動かないこともあります。あらかじめご了承ください。
 
-:scroll: [開発環境（AWS Cloud9） - Railsチュートリアル](https://railstutorial.jp/chapters/beginning#sec-development_environment)
+- :scroll: [開発環境（GitHub Codespaces） - Railsチュートリアル](https://railstutorial.jp/chapters/beginning#sec-development_environment)  
+- :scroll: [AWS Cloud9 を使って開発する - Railsチュートリアル](https://railstutorial.jp/help#aws-cloud9)
 
 <br>
 
