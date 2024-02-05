@@ -65,8 +65,6 @@ Sample App の開発途中でエラーの原因がどうしても分からない
 版番号や章番号ごとにセットアップ方法は異なります。例えば Codespaces を利用して[Rails 7.0 対応](#open_file_folder-各章とディレクトリ名の対応関係)の第11章を動かす場合は次のようになります。
 Codespacesの操作について詳しくは[『1.2.1開発環境』](https://railstutorial.jp/chapters/beginning?version=7.0#sec-development_environment)が、GitおよびGitHubについて詳しくは[『Git/GitHub編』](https://railstutorial.jp/git) が参考になります。
 
-1. GitHubで、アプリを動かすための[リポジトリを作成](https://github.com/new)しておきます。ここではリポジトリ名をsample_ch11としておきます。
-
 1. 本リポジトリをフォークしてからPCなどにクローンし、該当のディレクトリへ移動します。移動したディレクトリでGitの初期化からコミットまでを行います。
     ```
     $ git clone https://github.com/<あなたのアカウント名>/sample_apps.git
@@ -76,7 +74,9 @@ Codespacesの操作について詳しくは[『1.2.1開発環境』](https://rai
     $ git commit -m"第11章動作確認" 
     ```
 
-1. 手順1で作成したリポジトリで表示されるURLをリモートリポジトリURLとして設定し、プッシュします。
+1. GitHubで、アプリを動かすための[リポジトリを作成](https://github.com/new)しておきます。ここではリポジトリ名をsample_ch11としておきます。
+
+1. 手順2で作成したリポジトリで表示されるURLをリモートリポジトリURLとして設定し、プッシュします。
 
     ```
     # HTTPS接続の場合
@@ -115,7 +115,7 @@ Codespacesの操作について詳しくは[『1.2.1開発環境』](https://rai
 
 2. 本番環境でのみ必要なgemはスキップして`bundle install`します。
     ```
-    $ bundle install --without production
+    $ bundle _2.4.12_ install --without production
     ```
 
 3. データベースを移行します。
