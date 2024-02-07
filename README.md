@@ -74,7 +74,7 @@ Codespacesの操作について詳しくは[『1.2.1開発環境』](https://rai
     $ git commit -m"第11章動作確認" 
     ```
 
-1. GitHubで、アプリを動かすための[リポジトリを作成](https://github.com/new)しておきます。ここではリポジトリ名をsample_ch11としておきます。
+1. GitHubで、アプリを動かすための[リポジトリを作成](https://github.com/new)します。ここではリポジトリ名をsample_ch11としておきます。
 
 1. 手順2で作成したリポジトリで表示されるURLをリモートリポジトリURLとして設定し、プッシュします。
 
@@ -87,7 +87,7 @@ Codespacesの操作について詳しくは[『1.2.1開発環境』](https://rai
     $ git push -u origin main
     ```
 
-1. 手順1で作成したリポジトリ(ここではsample_ch11)で、「Code」から「Codespaces」タブに移動し、「Create codespace on main」をクリックすると環境構築がスタートします。しばらく待つとシンプルブラウザに「ActiveRecord::PendingMigrationError」が表示されるので、少し下の「Run pending migrations」ボタンをクリックするか、ターミナルを開いて以下のコマンドを実行するとデータベースが移行されます。
+1. 手順2で作成したリポジトリで、「Code」から「Codespaces」タブに移動し、「Create codespace on main」をクリックすると環境構築がスタートします。しばらく待つとシンプルブラウザに「ActiveRecord::PendingMigrationError」が表示されるので、少し下の「Run pending migrations」ボタンをクリックするか、ターミナルを開いて以下のコマンドを実行するとデータベースが移行されます。
     ```
     $ rails db:migrate
     ```
@@ -105,7 +105,7 @@ Codespacesの操作について詳しくは[『1.2.1開発環境』](https://rai
 結果はシンプルブラウザにも表示されていますが、実際のブラウザとは表示が異なる場合もあるので、シンプルブラウザのタブか「ポート」タブからブラウザウィンドウを開いておくと良いでしょう。無事にセットアップが完了できていれば、トップ画面が表示されます。ログインページから以下のメールアドレスとパスワードを入力するとログインできます。
 
  <details>
-    <summary>ここをクリックすると Codespaces 以外の環境で動かす方法が開きます。</summary>
+    <summary>ここをクリックすると Codespaces 以外の環境で動かす場合の参考情報が開きます。</summary>
 
  1. 本リポジトリをクローンし、該当のディレクトリへ移動します。
     ```
@@ -115,7 +115,7 @@ Codespacesの操作について詳しくは[『1.2.1開発環境』](https://rai
 
 2. 本番環境でのみ必要なgemはスキップして`bundle install`します。
     ```
-    $ bundle _2.4.12_ install --without production
+    $ bundle install --without production
     ```
 
 3. データベースを移行します。
