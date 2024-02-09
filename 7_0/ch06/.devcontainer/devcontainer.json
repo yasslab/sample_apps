@@ -1,0 +1,82 @@
+// Specifications: https://containers.dev/implementors/json_reference/
+// Format details: https://aka.ms/devcontainer.json
+// Config options: https://github.com/microsoft/vscode-dev-containers/tree/main/containers/ruby
+{
+  "name": "railstutorial",
+
+  // Universal is well-customized image for Codespaces:
+  // https://hub.docker.com/_/microsoft-devcontainers-universal
+  //"image": "mcr.microsoft.com/devcontainers/universal:2",
+  //"features": {
+  //  "ghcr.io/devcontainers/features/ruby:1": {}
+  //},
+
+  // Use Ruby image if you want to pin Ruby version like '3.2'
+  // https://github.com/devcontainers/images/tree/main/src/ruby
+  "image": "mcr.microsoft.com/devcontainers/ruby:3.2",
+  //"workspaceFolder": "/railstutorial", => Container build failed
+
+  // Enable learners to choose an affordable spec, starting at minimum one.
+  //"hostRequirements": {
+  //  "cpus":    2,
+  //  "memory":  "4gb",
+  //  "storage": "32gb"
+  //},
+
+  "waitFor": "onCreateCommand",
+  "onCreateCommand": "gem install solargraph -v '0.50.0' -N",
+  //"onCreateCommand": "",
+  //# => Solargraph gem not found. Run `gem install solargraph` or update your Gemfile.
+  "updateContentCommand": "bundle install",
+  "postCreateCommand": "",
+  "postAttachCommand": {
+    "server": "rails server"
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "app/views/hello/index.html.erb"
+      ]
+    },
+    "vscode": {
+      "extensions": [
+        "GitHub.codespaces",
+        "Shopify.ruby-lsp",   // https://github.com/Shopify/vscode-ruby-lsp
+        "castwide.solargraph" // https://github.com/castwide/vscode-solargraph
+      ],
+      "settings": {
+        // Use Ctrl+Shift+P->Format to format.
+        //"ruby.useLanguageServer": true ,
+        //"ruby.format": "rubocop",
+        //"ruby.lint": { "rubocop": true },
+        //"ruby.intellisense": "rubyLocate",
+        "editor.tabSize": 2,
+        "editor.renderWhitespace": false,
+        "files.associations": { "*.erb": "erb" },
+        "emmet.includeLanguages": { "erb": "html" },
+
+        // Settings for Solargraph
+        "solargraph.useBundler":  false,
+        "solargraph.diagnostics": false,
+        "solargraph.formatting":  true,
+        "solargraph.autoformat":  false,
+        "solargraph.definitions": true,
+        "solargraph.completion":  true,
+        "solargraph.references":  true,
+        "solargraph.symbols":     true,
+        "solargraph.rename":      true,
+        "solargraph.hover":       true
+      }
+    }
+  },
+  "remoteEnv": {
+    "EDITOR": "code --wait"
+  },
+  "portsAttributes": {
+    "3000": {
+      "label": "Application",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "forwardPorts": [3000]
+}

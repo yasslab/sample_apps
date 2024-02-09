@@ -17,9 +17,8 @@
 その後、次のコマンドで必要になる RubyGems をインストールします。
 
 ```
-$ gem install bundler -v 2.3.14
-$ bundle _2.3.14_ config set --local without 'production'
-$ bundle _2.3.14_ install
+$ gem install bundler -v 2.4.12
+$ bundle _2.4.12_ install
 ```
 
 その後、データベースへのマイグレーションを実行します。
