@@ -71,7 +71,7 @@ Codespacesの操作について詳しくは[『1.2.1開発環境』](https://rai
     $ cd 7_0/ch11
     $ git init
     $ git add .
-    $ git commit -m"第11章動作確認" 
+    $ git commit -m "第11章動作確認" 
     ```
 
 1. GitHubで、アプリを動かすための[リポジトリを作成](https://github.com/new)します。ここではリポジトリ名をsample_ch11としておきます。
@@ -84,6 +84,7 @@ Codespacesの操作について詳しくは[『1.2.1開発環境』](https://rai
     $ git remote -v
     origin  https://github.com/<あなたのアカウント名>/sample_ch11.git (fetch)
     origin  https://github.com/<あなたのアカウント名>/sample_ch11.git (push)
+
     $ git push -u origin main
     ```
 
@@ -150,10 +151,11 @@ Codespacesの操作について詳しくは[『1.2.1開発環境』](https://rai
 - 🎓 [Railsチュートリアル電子書籍](https://railstutorial.jp/ebook) 📖
 - 🎓 [Railsチュートリアル解説動画](https://railstutorial.jp/screencast) 📹
 - 🎓 [Railsチュートリアル質問対応](https://railstutorial.jp/#learn-by) 💡
+- :octocat: [yasslab/codespaces-railstutorial (公開リポジトリ)](https://github.com/yasulab/codespaces-railstutorial)
 - 📕 [Railsガイド](https://railsguides.jp)
 - 📕 [Railsガイド電子書籍](https://railsguides.jp/ebook) 📖
 - 📕 [Railsガイド『Proプラン』](https://railsguides.jp/pro) 🔍
-- 📕 [Railsガイド『Teamプラン』](https://railsguides.jp/pro) 🔍
+- 📕 [Railsガイド『協賛プラン』](https://railsguides.jp/sponsors) 🔍
 - :octocat: [yasslab/railsguides.jp (公開リポジトリ)](https://github.com/yasslab/railsguides.jp)
 
 <br>
