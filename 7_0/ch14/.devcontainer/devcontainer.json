@@ -24,8 +24,10 @@
   //},
 
   "waitFor": "onCreateCommand",
-  "onCreateCommand": "gem install solargraph -v '0.50.0' -N",
   //"onCreateCommand": "",
+  "onCreateCommand": "gem install solargraph -v '0.50.0' -N",
+  //"onCreateCommand": "gem install solargraph -v '0.50.0' -N && gem install ruby-lsp -N",
+  //"onCreateCommand": "gem install ruby-lsp -N",
   //# => Solargraph gem not found. Run `gem install solargraph` or update your Gemfile.
   "updateContentCommand": "bundle install",
   "postCreateCommand": "",
@@ -43,29 +45,45 @@
         "GitHub.codespaces",
         "Shopify.ruby-lsp",   // https://github.com/Shopify/vscode-ruby-lsp
         "castwide.solargraph" // https://github.com/castwide/vscode-solargraph
+        //"rebornix.Ruby",    // https://github.com/rubyide/vscode-ruby (Deprecated)
+        
       ],
       "settings": {
-        // Use Ctrl+Shift+P->Format to format.
+        // General settings for Codespaces (VS Code)
         //"ruby.useLanguageServer": true ,
         //"ruby.format": "rubocop",
         //"ruby.lint": { "rubocop": true },
         //"ruby.intellisense": "rubyLocate",
         "editor.tabSize": 2,
-        "editor.renderWhitespace": false,
-        "files.associations": { "*.erb": "erb" },
-        "emmet.includeLanguages": { "erb": "html" },
-
+        "editor.formatOnSave": false,
+        "editor.renderWhitespace": "none",
+        "[ruby]": {
+          "editor.defaultFormatter": "castwide.solargraph"
+        },
+        "files.associations":     { "*.erb": "erb"  },
+        "emmet.includeLanguages": {   "erb": "html" },
+        
         // Settings for Solargraph
+        // https://github.com/castwide/solargraph
         "solargraph.useBundler":  false,
         "solargraph.diagnostics": false,
-        "solargraph.formatting":  true,
+        "solargraph.formatting":  true,  // Use Ctrl+Shift+P->Format to format
         "solargraph.autoformat":  false,
         "solargraph.definitions": true,
         "solargraph.completion":  true,
         "solargraph.references":  true,
         "solargraph.symbols":     true,
         "solargraph.rename":      true,
-        "solargraph.hover":       true
+        "solargraph.hover":       true,
+        
+        // Settings for Ruby LSP
+        // https://github.com/Shopify/vscode-ruby-lsp
+        "rubyLsp.rubyVersionManager": "rvm",
+        "rubyLsp.formatter":          "none",
+        "rubyLsp.enabledFeatures": {
+          "diagnostics": false,
+          "formatting":  false
+        }
       }
     }
   },
