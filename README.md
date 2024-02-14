@@ -151,7 +151,7 @@ Codespacesの操作について詳しくは[『1.2.1開発環境』](https://rai
 - 🎓 [Railsチュートリアル電子書籍](https://railstutorial.jp/ebook) 📖
 - 🎓 [Railsチュートリアル解説動画](https://railstutorial.jp/screencast) 📹
 - 🎓 [Railsチュートリアル質問対応](https://railstutorial.jp/#learn-by) 💡
-- :octocat: [yasslab/codespaces-railstutorial (公開リポジトリ)](https://github.com/yasulab/codespaces-railstutorial)
+- :octocat: [yasslab/codespaces-railstutorial (公開リポジトリ)](https://github.com/yasslab/codespaces-railstutorial)
 - 📕 [Railsガイド](https://railsguides.jp)
 - 📕 [Railsガイド電子書籍](https://railsguides.jp/ebook) 📖
 - 📕 [Railsガイド『Proプラン』](https://railsguides.jp/pro) 🔍
