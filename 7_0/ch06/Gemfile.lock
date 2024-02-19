@@ -182,10 +182,10 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     parallel (1.24.0)
-    parser (3.3.0.4)
+    parser (3.3.0.2)
       ast (~> 2.4.1)
       racc
-    prism (0.18.0)
+    prism (0.22.0)
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -245,11 +245,11 @@ GEM
     reverse_markdown (2.1.1)
       nokogiri
     rexml (3.2.5)
-    rubocop (1.60.0)
+    rubocop (1.59.0)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
-      parser (>= 3.3.0.2)
+      parser (>= 3.2.2.4)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
       rexml (>= 3.2.5, < 4.0)
@@ -363,7 +363,7 @@ DEPENDENCIES
   webdrivers (= 5.2.0)
 
 RUBY VERSION
-   ruby 3.2.2p53
+   ruby 3.2.3p157
 
 BUNDLED WITH
-   2.4.12
+   2.5.6
