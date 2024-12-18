@@ -123,7 +123,7 @@ GEM
     importmap-rails (1.1.5)
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
-    io-console (0.6.0)
+    io-console (0.8.0)
     irb (1.10.0)
       rdoc
       reline (>= 0.3.8)
@@ -236,7 +236,7 @@ GEM
     rdoc (6.6.0)
       psych (>= 4.0.0)
     regexp_parser (2.7.0)
-    reline (0.4.0)
+    reline (0.5.10)
       io-console (~> 0.5)
     repl_type_completor (0.1.2)
       prism (>= 0.19.0, < 0.20.0)
@@ -349,6 +349,7 @@ DEPENDENCIES
   puma (= 5.6.8)
   rails (= 7.0.4.3)
   rails-controller-testing (= 1.0.5)
+  reline (= 0.5.10)
   repl_type_completor (= 0.1.2)
   sassc-rails (= 2.1.2)
   selenium-webdriver (= 4.8.3)
@@ -361,7 +362,7 @@ DEPENDENCIES
   webdrivers (= 5.2.0)
 
 RUBY VERSION
-   ruby 3.2.5p208
+   ruby 3.2.6p234
 
 BUNDLED WITH
    2.5.6
