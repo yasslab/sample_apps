@@ -25,7 +25,7 @@
 
   "waitFor": "onCreateCommand",
   //"onCreateCommand": "",
-  "onCreateCommand": "gem install solargraph -v '0.50.0' -N",
+  "onCreateCommand": "gem install solargraph -v '0.52.0' -N",
   //"onCreateCommand": "gem install solargraph -v '0.50.0' -N && gem install ruby-lsp -N",
   //"onCreateCommand": "gem install ruby-lsp -N",
   //# => Solargraph gem not found. Run `gem install solargraph` or update your Gemfile.
@@ -43,10 +43,10 @@
     "vscode": {
       "extensions": [
         "GitHub.codespaces",
-        "Shopify.ruby-lsp",   // https://github.com/Shopify/vscode-ruby-lsp
+        "Shopify.ruby-lsp",   // https://github.com/Shopify/ruby-lsp
         "castwide.solargraph" // https://github.com/castwide/vscode-solargraph
         //"rebornix.Ruby",    // https://github.com/rubyide/vscode-ruby (Deprecated)
-        
+
       ],
       "settings": {
         // General settings for Codespaces (VS Code)
@@ -55,14 +55,17 @@
         //"ruby.lint": { "rubocop": true },
         //"ruby.intellisense": "rubyLocate",
         "editor.tabSize": 2,
-        "editor.formatOnSave": false,
+        "editor.formatOnSave": false, // Disable onSave to show diff edited by learners only
+        "editor.formatOnType": false, // Disable onType for the same reason above
+        "editor.insertSpaces": true,  // Use spaces, not tabs, to avoid errors for learners
         "editor.renderWhitespace": "none",
         "[ruby]": {
-          "editor.defaultFormatter": "castwide.solargraph"
+          "editor.defaultFormatter": "castwide.solargraph",
+          "editor.semanticHighlighting.enabled": true // Enable semantic highlighting
         },
         "files.associations":     { "*.erb": "erb"  },
         "emmet.includeLanguages": {   "erb": "html" },
-        
+
         // Settings for Solargraph
         // https://github.com/castwide/solargraph
         "solargraph.useBundler":  false,
@@ -75,11 +78,13 @@
         "solargraph.symbols":     true,
         "solargraph.rename":      true,
         "solargraph.hover":       true,
-        
+
         // Settings for Ruby LSP
-        // https://github.com/Shopify/vscode-ruby-lsp
-        "rubyLsp.rubyVersionManager": "rvm",
-        "rubyLsp.formatter":          "none",
+        // https://github.com/Shopify/ruby-lsp
+        "rubyLsp.rubyVersionManager": {
+          "identifier": "none"
+        },
+        "rubyLsp.formatter": "none",
         "rubyLsp.enabledFeatures": {
           "diagnostics": false,
           "formatting":  false
