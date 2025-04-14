@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.2.7"
+ruby "3.2.8"
 
 gem "rails",           "7.0.4.3"
 gem "bcrypt",          "3.1.18"
@@ -24,7 +24,7 @@ end
 
 group :development do
   gem "web-console",         "4.2.0"
-  gem "solargraph",          "0.52.0"
+  gem "solargraph",          "0.53.4"
   gem "irb",                 "1.10.0"
   gem "repl_type_completor", "0.1.2"
 end
