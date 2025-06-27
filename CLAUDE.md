@@ -128,3 +128,53 @@ rails db:rollback
 - 標準的なRailsの規約に従っています
 - 実装が完了したと判断する前にテストが通ることを確認
 - デバッグやデータ確認にはRailsコンソール（`rails console`）を使用
+
+## リポジトリ構造
+
+```
+sample_apps/
+├── 4_0/  # Rails 4.0対応（第2版）
+├── 4_2/  # Rails 4.2対応（第3版）
+├── 5_0/  # Rails 5.0対応（第4版）
+├── 5_1/  # Rails 5.1対応（第4版）
+├── 6_0/  # Rails 6.0対応（第6版）
+├── 6_1/  # Rails 6.1対応（第6版）
+├── 7_0/  # Rails 7.0対応（第7版）
+│   ├── ch01/  # 第1章完了時点
+│   ├── ch02/  # 第2章完了時点
+│   ├── ...    # 各章ごと
+│   └── ch14/  # 第14章完了時点（完成版）
+└── omake/  # 追加サンプル
+```
+
+## よくあるデバッグコマンド
+
+```bash
+# ログ確認
+tail -f log/development.log
+
+# Railsコンソール
+rails console
+rails c  # 短縮形
+
+# データベースコンソール
+rails dbconsole
+rails db  # 短縮形
+
+# ルーティング確認
+rails routes
+rails routes | grep users  # 特定のルートを検索
+
+# 環境情報確認
+rails about
+
+# アセットプリコンパイル（本番環境向け）
+rails assets:precompile
+```
+
+## 関連リソース
+
+- [Railsチュートリアル公式サイト](https://railstutorial.jp/)
+- [解説動画](https://railstutorial.jp/screencast)
+- [お試し視聴](https://railstutorial.jp/trial)
+- [GitHub Codespaces設定](https://github.com/yasslab/codespaces-railstutorial)
