@@ -25,7 +25,7 @@
 
   "waitFor": "onCreateCommand",
   //"onCreateCommand": "",
-  "onCreateCommand": "gem install solargraph -v '0.53.4' -N",
+  "onCreateCommand": "gem install solargraph -v '0.56.2' -N",
   //"onCreateCommand": "gem install solargraph -v '0.50.0' -N && gem install ruby-lsp -N",
   //"onCreateCommand": "gem install ruby-lsp -N",
   //# => Solargraph gem not found. Run `gem install solargraph` or update your Gemfile.
