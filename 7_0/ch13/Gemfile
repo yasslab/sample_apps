@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.2.8"
+ruby "3.2.9"
 
 gem "rails",                      "7.0.4.3"
 gem "image_processing",           "1.12.2"
@@ -29,9 +29,9 @@ end
 
 group :development do
   gem "web-console",         "4.2.0"
-  gem "solargraph",          "0.53.4"
+  gem "solargraph",          "0.56.2"
   gem "irb",                 "1.10.0"
-  gem "repl_type_completor", "0.1.2"
+  gem "repl_type_completor", "0.1.10"
 end
 
 group :test do
