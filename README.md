@@ -48,16 +48,13 @@ Sample App の開発途中でエラーの原因がどうしても分からない
 <br>
 
 ## :white_check_mark: 動作環境と注意事項
-**本リポジトリにあるサンプルコードは、第7版では [Railsチュートリアル用にカスタマイズしたGitHub Codespaces](https://github.com/yasslab/codespaces-railstutorial) 上で、第6版以前は [AWS Cloud9](https://aws.amazon.com/jp/cloud9/) 上で動作確認しています。** macOS や Windows などのローカル環境では下記の手順で動かないこともあります。あらかじめご了承ください。
+**本リポジトリにあるサンプルコードは、[Railsチュートリアル用にカスタマイズしたGitHub Codespaces](https://github.com/yasslab/codespaces-railstutorial) 上でのみ動作確認しています。**
 
-- :scroll: [開発環境（GitHub Codespaces） - Railsチュートリアル](https://railstutorial.jp/chapters/beginning#sec-development_environment)  
-- :scroll: [AWS Cloud9 を使って開発する - Railsチュートリアル](https://railstutorial.jp/help#aws-cloud9)
+- :octocat: [GitHub - yasslab/codespaces-railstutorial](https://github.com/yasslab/codespaces-railstutorial)
+- :mortar_board: [Railsチュートリアル - 開発環境（GitHub Codespaces）](https://railstutorial.jp/chapters/beginning#sec-development_environment)
+- :mortar_board: [Railsチュートリアル - 困ったときのヒント集（ヘルプ）](https://railstutorial.jp/help)
 
-<br>
-
-また**2022年9月より VS Code + Docker 環境でもチャレンジできる**ようになりました。詳細は下記の note 記事をご参照ください。
-
-🐳 [devcontainerを使って開発してみよう - note](https://note.com/yasslab/n/n5dcbd7eb43c6)
+macOS や Windows、Linux (Docker) などの**ローカル環境で動かす場合は個別にカスタマイズする必要があります**ので、あらかじめご了承いただけると幸いです。
 
 <br>
 
