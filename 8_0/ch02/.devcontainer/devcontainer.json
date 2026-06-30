@@ -1,0 +1,105 @@
+// Specifications: https://containers.dev/implementors/json_reference/
+// Format details: https://aka.ms/devcontainer.json
+// Config options: https://github.com/microsoft/vscode-dev-containers/tree/main/containers/ruby
+{
+  "name": "railstutorial",
+
+  // Universal is well-customized image for Codespaces:
+  // https://hub.docker.com/_/microsoft-devcontainers-universal
+  //"image": "mcr.microsoft.com/devcontainers/universal:2",
+  //"features": {
+  //  "ghcr.io/devcontainers/features/ruby:1": {}
+  //},
+
+  // Use Ruby image if you want to pin Ruby version like '3.2'
+  // https://github.com/devcontainers/images/tree/main/src/ruby
+  "image": "mcr.microsoft.com/devcontainers/ruby:3.2",
+  //"workspaceFolder": "/railstutorial", => Container build failed
+
+  // Enable learners to choose an affordable spec, starting at minimum one.
+  //"hostRequirements": {
+  //  "cpus":    2,
+  //  "memory":  "4gb",
+  //  "storage": "32gb"
+  //},
+
+  "waitFor": "onCreateCommand",
+  //"onCreateCommand": "",
+  "onCreateCommand": "gem install solargraph -v '0.58.2' -N",
+  //"onCreateCommand": "gem install solargraph -v '0.50.0' -N && gem install ruby-lsp -N",
+  //"onCreateCommand": "gem install ruby-lsp -N",
+  //# => Solargraph gem not found. Run `gem install solargraph` or update your Gemfile.
+  "updateContentCommand": "bundle install",
+  "postCreateCommand": "",
+  "postAttachCommand": {
+    "server": "rails server"
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "app/views/hello/index.html.erb"
+      ]
+    },
+    "vscode": {
+      "extensions": [
+        "GitHub.codespaces",
+        "Shopify.ruby-lsp",   // https://github.com/Shopify/ruby-lsp
+        "castwide.solargraph" // https://github.com/castwide/vscode-solargraph
+        //"rebornix.Ruby",    // https://github.com/rubyide/vscode-ruby (Deprecated)
+
+      ],
+      "settings": {
+        // General settings for Codespaces (VS Code)
+        //"ruby.useLanguageServer": true ,
+        //"ruby.format": "rubocop",
+        //"ruby.lint": { "rubocop": true },
+        //"ruby.intellisense": "rubyLocate",
+        "editor.tabSize": 2,
+        "editor.formatOnSave": false, // Disable onSave to show diff edited by learners only
+        "editor.formatOnType": false, // Disable onType for the same reason above
+        "editor.insertSpaces": true,  // Use spaces, not tabs, to avoid errors for learners
+        "editor.renderWhitespace": "none",
+        "[ruby]": {
+          "editor.defaultFormatter": "castwide.solargraph",
+          "editor.semanticHighlighting.enabled": true // Enable semantic highlighting
+        },
+        "files.associations":     { "*.erb": "erb"  },
+        "emmet.includeLanguages": {   "erb": "html" },
+
+        // Settings for Solargraph
+        // https://github.com/castwide/solargraph
+        "solargraph.useBundler":  false,
+        "solargraph.diagnostics": false,
+        "solargraph.formatting":  true,  // Use Ctrl+Shift+P->Format to format
+        "solargraph.autoformat":  false,
+        "solargraph.definitions": true,
+        "solargraph.completion":  true,
+        "solargraph.references":  true,
+        "solargraph.symbols":     true,
+        "solargraph.rename":      true,
+        "solargraph.hover":       true,
+
+        // Settings for Ruby LSP
+        // https://github.com/Shopify/ruby-lsp
+        "rubyLsp.rubyVersionManager": {
+          "identifier": "none"
+        },
+        "rubyLsp.formatter": "none",
+        "rubyLsp.enabledFeatures": {
+          "diagnostics": false,
+          "formatting":  false
+        }
+      }
+    }
+  },
+  "remoteEnv": {
+    "EDITOR": "code --wait"
+  },
+  "portsAttributes": {
+    "3000": {
+      "label": "Application",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "forwardPorts": [3000]
+}
