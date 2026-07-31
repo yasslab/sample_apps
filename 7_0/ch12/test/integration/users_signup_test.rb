@@ -41,7 +41,7 @@ class AccountActivationTest < UsersSignup
                                        email: "user@example.com",
                                        password:              "password",
                                        password_confirmation: "password" } }
-    @user = assigns(:user)
+    @user = controller.view_assigns["user"]
   end
 
   test "should not be activated" do

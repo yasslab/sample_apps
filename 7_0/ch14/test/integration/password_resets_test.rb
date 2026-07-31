@@ -30,7 +30,7 @@ class PasswordResetForm < PasswordResets
     @user = users(:michael)
     post password_resets_path,
          params: { password_reset: { email: @user.email } }
-    @reset_user = assigns(:user)
+    @reset_user = controller.view_assigns["user"]
   end
 end
 
