@@ -11,7 +11,8 @@ class ForgotPasswordFormTest < PasswordResets
 
   test "password reset path" do
     get new_password_reset_path
-    assert_template 'password_resets/new'
+    assert_response :success
+    assert_select "title", "Forgot password | Ruby on Rails Tutorial Sample App"
     assert_select 'input[name=?]', 'password_reset[email]'
   end
 
@@ -19,7 +20,7 @@ class ForgotPasswordFormTest < PasswordResets
     post password_resets_path, params: { password_reset: { email: "" } }
     assert_response :unprocessable_entity
     assert_not flash.empty?
-    assert_template 'password_resets/new'
+    assert_select "title", "Forgot password | Ruby on Rails Tutorial Sample App"
   end
 end
 
@@ -63,7 +64,8 @@ class PasswordFormTest < PasswordResetForm
   test "reset with right email and right token" do
     get edit_password_reset_path(@reset_user.reset_token,
                                  email: @reset_user.email)
-    assert_template 'password_resets/edit'
+    assert_response :success
+    assert_select "title", "Reset password | Ruby on Rails Tutorial Sample App"
     assert_select "input[name=email][type=hidden][value=?]", @reset_user.email
   end
 end

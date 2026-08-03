@@ -9,13 +9,15 @@ class UsersEditTest < ActionDispatch::IntegrationTest
   test "unsuccessful edit" do
     log_in_as(@user)
     get edit_user_path(@user)
-    assert_template 'users/edit'
+    assert_response :success
+    assert_select "title", "Edit user | Ruby on Rails Tutorial Sample App"
     patch user_path(@user), params: { user: { name:  "",
                                               email: "foo@invalid",
                                               password:              "foo",
                                               password_confirmation: "bar" } }
 
-    assert_template 'users/edit'
+    assert_response :unprocessable_entity
+    assert_select "title", "Edit user | Ruby on Rails Tutorial Sample App"
   end
 
   test "successful edit with friendly forwarding" do

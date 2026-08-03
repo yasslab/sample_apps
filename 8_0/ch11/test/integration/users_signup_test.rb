@@ -17,7 +17,7 @@ class UsersSignupTest < UsersSignup
                                          password_confirmation: "bar" } }
     end
     assert_response :unprocessable_entity
-    assert_template 'users/new'
+    assert_select "title", "Sign up | Ruby on Rails Tutorial Sample App"
     assert_select 'div#error_explanation'
     assert_select 'div.field_with_errors'
   end
@@ -67,7 +67,8 @@ class AccountActivationTest < UsersSignup
     get edit_account_activation_path(@user.activation_token, email: @user.email)
     assert @user.reload.activated?
     follow_redirect!
-    assert_template 'users/show'
+    assert_response :success
+    assert_select "title", "Example User | Ruby on Rails Tutorial Sample App"
     assert is_logged_in?
   end
 end
