@@ -11,9 +11,11 @@
   //  "ghcr.io/devcontainers/features/ruby:1": {}
   //},
 
-  // Use Ruby image if you want to pin Ruby version like '3.2'
-  // https://github.com/devcontainers/images/tree/main/src/ruby
-  "image": "mcr.microsoft.com/devcontainers/ruby:3.2",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  // Use the non-root user created in Dockerfile
+  "remoteUser": "vscode",
   //"workspaceFolder": "/railstutorial", => Container build failed
 
   // Enable learners to choose an affordable spec, starting at minimum one.
@@ -23,12 +25,8 @@
   //  "storage": "32gb"
   //},
 
-  "waitFor": "onCreateCommand",
-  //"onCreateCommand": "",
-  "onCreateCommand": "gem install solargraph -v '0.58.2' -N",
-  //"onCreateCommand": "gem install solargraph -v '0.50.0' -N && gem install ruby-lsp -N",
-  //"onCreateCommand": "gem install ruby-lsp -N",
-  //# => Solargraph gem not found. Run `gem install solargraph` or update your Gemfile.
+  "waitFor": "updateContentCommand",
+  // Solargraph is installed from the Gemfile by bundle install.
   "updateContentCommand": "bundle install",
   "postCreateCommand": "",
   "postAttachCommand": {
@@ -68,7 +66,7 @@
 
         // Settings for Solargraph
         // https://github.com/castwide/solargraph
-        "solargraph.useBundler":  false,
+        "solargraph.useBundler":  true,
         "solargraph.diagnostics": false,
         "solargraph.formatting":  true,  // Use Ctrl+Shift+P->Format to format
         "solargraph.autoformat":  false,
