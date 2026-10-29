@@ -1,9 +1,9 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.2.9"
+ruby "3.2.11"
 
-gem "rails",                      "7.0.4.3"
+gem "rails",                      "7.0.10"
 gem "image_processing",           "1.12.2"
 gem "active_storage_validations", "0.9.8"
 gem "bcrypt",                     "3.1.18"
@@ -17,7 +17,7 @@ gem "importmap-rails",            "1.1.5"
 gem "turbo-rails",                "1.4.0"
 gem "stimulus-rails",             "1.2.1"
 gem "jbuilder",                   "2.11.5"
-gem "puma",                       "5.6.8"
+gem "puma",                       "5.6.9"
 gem "bootsnap",                   "1.16.0", require: false
 gem "sqlite3",                    "1.6.1"
 gem "concurrent-ruby", "1.3.4"
@@ -29,7 +29,7 @@ end
 
 group :development do
   gem "web-console",         "4.2.0"
-  gem "solargraph",          "0.56.2"
+  gem "solargraph",          "0.61.0"
   gem "irb",                 "1.10.0"
   gem "repl_type_completor", "0.1.10"
 end
